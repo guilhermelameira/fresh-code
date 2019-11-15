@@ -11,12 +11,14 @@ export interface ChartDataLeaf {
     size: number;
     heat?: number;
     info: InfoElement[];
+    image?: string;
 }
 
 export interface ChartDataBranch {
     name: string;
     heat?: number;
     info: InfoElement[];
+    image?: string;
     children: ChartDataNode[];
 }
 

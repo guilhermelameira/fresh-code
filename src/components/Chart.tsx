@@ -11,11 +11,11 @@ am4core.useTheme(am4themes_animated);
 type ExtendedChartDataNode = (ExtendedChartDataBranch | ExtendedChartDataLeaf);
 interface ExtendedChartDataBranch extends ChartDataBranch {
     color?: string; 
-    infoString?: string; 
+    data?: any; 
 }
 interface ExtendedChartDataLeaf extends ChartDataLeaf {
     color?: string; 
-    infoString?: string; 
+    data?: any; 
 }
 function isExtendedBranch(node: ExtendedChartDataNode): node is ExtendedChartDataBranch {
     return isBranch(node as ChartDataNode);
@@ -34,6 +34,7 @@ class Chart extends Component<ChartProps> {
         this.configChartStyling(chart, levelSeriesTemplates);
         this.configElementText(levelSeriesTemplates);
         this.configElementTooltip(levelSeriesTemplates);
+        this.configElementBgImage(levelSeriesTemplates);
 
         chart.data = this.getData(repo);
 
@@ -65,7 +66,7 @@ class Chart extends Component<ChartProps> {
         chart.dataFields.name = "name";
         chart.dataFields.children = "children";
         chart.dataFields.color = "color";
-        chart.dataFields.data = "infoString";
+        chart.dataFields.data = "data";
     }
 
     private configElementText(levelSeriesTemplates: am4charts.TreeMapSeries[]) {
@@ -80,8 +81,29 @@ class Chart extends Component<ChartProps> {
 
     private configElementTooltip(levelSeriesTemplates: am4charts.TreeMapSeries[]) {
         levelSeriesTemplates.forEach((levelSeriesTemplate: am4charts.TreeMapSeries) => {
-            levelSeriesTemplate.columns.template.tooltipText = "Name: {name}\n{data}";
+            levelSeriesTemplate.columns.template.tooltipText = "Name: {name}\n{data.infoString}";
         });
+    }
+
+    configElementBgImage(levelSeriesTemplates: am4charts.TreeMapSeries[]) {
+        levelSeriesTemplates.forEach((levelSeriesTemplate: am4charts.TreeMapSeries) => {
+            let image = levelSeriesTemplate.columns.template.createChild(
+                am4core.Image
+            );
+            image.opacity = 0.04;
+            image.align = "center";
+            image.valign = "middle";
+            image.width = am4core.percent(80);
+            image.height = am4core.percent(80);
+            
+            image.adapter.add("href", (href, target) => {
+                let dataItem = (target.parent as any).dataItem;
+                if (dataItem) {
+                return dataItem.treeMapDataItem.data.image;
+                }
+            });
+        });
+
     }
 
     private configChartStyling(chart: am4charts.TreeMap, levelSeriesTemplates: am4charts.TreeMapSeries[]) {
@@ -110,7 +132,7 @@ class Chart extends Component<ChartProps> {
     }
 
     private getData(repo: ExtendedChartDataNode) {
-        return [this.setInfoString(this.setColors(repo))];
+        return [this.setAdditionalFields(this.setColors(repo))];
     }
 
     private setColors(repo: ExtendedChartDataNode) {
@@ -127,12 +149,14 @@ class Chart extends Component<ChartProps> {
         return repo;
     }
 
-    private setInfoString(node: ExtendedChartDataNode) {
+    private setAdditionalFields(node: ExtendedChartDataNode) {
         if (isExtendedBranch(node)) {
-            node.children.forEach(this.setInfoString.bind(this)); 
+            node.children.forEach(this.setAdditionalFields.bind(this)); 
         }
         if (node.info) {
-            node.infoString = node.info.map(({name, value})=>`${name}: ${value}`).join("\n"); 
+            let image = node.image; 
+            let infoString = node.info.map(({name, value})=>`${name}: ${value}`).join("\n"); 
+            node.data = {infoString, image}
         }
         return node;
     }
