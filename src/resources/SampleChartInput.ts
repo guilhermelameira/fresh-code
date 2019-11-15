@@ -69,7 +69,7 @@ export const repo: Repo = {
                    {
                       "name":"components",
                       "size":3,
-                      "heat":98,
+                      "heat":150,
                       "image": fileIcon,
                       "info":[
                         {

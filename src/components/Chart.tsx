@@ -3,30 +3,30 @@ import '../App.css';
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
-import {ChartProps, ChartDataNode, ChartDataBranch, ChartDataLeaf, isBranch} from '../types/ChartTypes'; 
+import { ChartProps, ChartDataNode, ChartDataBranch, ChartDataLeaf, isBranch } from '../types/ChartTypes';
 
 am4core.useTheme(am4themes_animated);
 
 // Internal Types
 type ExtendedChartDataNode = (ExtendedChartDataBranch | ExtendedChartDataLeaf);
 interface ExtendedChartDataBranch extends ChartDataBranch {
-    color?: string; 
-    data?: any; 
+    color?: string;
+    data?: { infoString?: string; image?: string; };
 }
 interface ExtendedChartDataLeaf extends ChartDataLeaf {
-    color?: string; 
-    data?: any; 
+    color?: string;
+    data?: { infoString?: string; image?: string; };
 }
 function isExtendedBranch(node: ExtendedChartDataNode): node is ExtendedChartDataBranch {
     return isBranch(node as ChartDataNode);
 }
 
 class Chart extends Component<ChartProps> {
-    chart?: am4charts.TreeMap; 
+    chart?: am4charts.TreeMap;
 
     componentDidMount() {
         let chart = am4core.create("chartdiv", am4charts.TreeMap);
-        let {repo} = this.props; 
+        let { repo } = this.props;
 
         this.configDataFields(chart);
         let levelSeriesTemplates = this.generateLevelSeriesTemplates(chart);
@@ -51,8 +51,8 @@ class Chart extends Component<ChartProps> {
 
     private configHeatLegend(chart: am4charts.TreeMap, repo: ExtendedChartDataNode): void {
         let heatLegend = chart.createChild(am4charts.HeatLegend);
-        heatLegend.minColor = am4core.color(this.getColor(1));
-        heatLegend.maxColor = am4core.color(this.getColor(0));
+        heatLegend.minColor = am4core.color(this.getColor(0));
+        heatLegend.maxColor = am4core.color(this.getColor(1));
         let { min, max } = this.getMinMaxHeat(repo);
         heatLegend.minValue = min;
         heatLegend.maxValue = max;
@@ -95,11 +95,11 @@ class Chart extends Component<ChartProps> {
             image.valign = "middle";
             image.width = am4core.percent(80);
             image.height = am4core.percent(80);
-            
+
             image.adapter.add("href", (href, target) => {
                 let dataItem = (target.parent as any).dataItem;
                 if (dataItem) {
-                return dataItem.treeMapDataItem.data.image;
+                    return dataItem.treeMapDataItem.data.image;
                 }
             });
         });
@@ -151,39 +151,44 @@ class Chart extends Component<ChartProps> {
 
     private setAdditionalFields(node: ExtendedChartDataNode) {
         if (isExtendedBranch(node)) {
-            node.children.forEach(this.setAdditionalFields.bind(this)); 
+            node.children.forEach(this.setAdditionalFields.bind(this));
         }
         if (node.info) {
-            let image = node.image; 
-            let infoString = node.info.map(({name, value})=>`${name}: ${value}`).join("\n"); 
-            node.data = {infoString, image}
+            let image = node.image;
+            let infoString = node.info.map(({ name, value }) => `${name}: ${value}`).join("\n");
+            node.data = { infoString, image }
         }
         return node;
     }
 
-    // TODO: implement this function
     private getMinMaxHeat(repo: ExtendedChartDataNode) {
-        let min;
-        let max;
-
-        // mock
-        min = 3;
-        max = 98;
-
+        let min = Infinity;
+        let max = 0;
+        let helper = (node: ExtendedChartDataNode) => {
+            let val = node.heat;
+            if (val) {
+                if (max === undefined || val > max) max = val;
+                if (min === undefined || val < min) min = val;
+            }
+            if (isExtendedBranch(node)) {
+                node.children.forEach(helper);
+            }
+        }
+        helper(repo);
         return { min, max };
     }
 
     private getDepth(node: ExtendedChartDataNode): number {
         if (isExtendedBranch(node)) {
-            return Math.max(...(node.children .map(this.getDepth.bind(this)))) + 1; 
+            return Math.max(...(node.children.map(this.getDepth.bind(this)))) + 1;
         } else {
-            return 1; 
+            return 1;
         }
     }
 
-    private getColor(percentage: number): string {
+    private getColor(ratio: number): string {
         // Brown to green
-        return `rgb(100,${Math.floor(percentage * 200)+55},0)`; 
+        return `rgb(100,${Math.floor((1 - ratio) * 200) + 55},0)`;
         // Red to green
         // if (percentage > .5) {
         //     let g = Math.floor((percentage - .5) * 2 * 255);
