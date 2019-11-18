@@ -1,3 +1,5 @@
+import { string } from "@amcharts/amcharts4/core";
+
 export interface ChartProps {
     repo: Repo;
 }
@@ -34,3 +36,6 @@ export function isBranch(node: ChartDataNode): node is ChartDataBranch {
 export function isLeaf(node: ChartDataNode): node is ChartDataBranch {
     return (node as ChartDataBranch).children === undefined;
 }
+
+
+
