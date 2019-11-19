@@ -19,7 +19,7 @@ function runShellCommand(commandString: string, cwd: string): string {
         stringResult = result;
     }
     console.log(commandString + ' in ' + cwd + ' result:');
-    console.log(stringResult);
+    // console.log(stringResult);
     return stringResult;
 }
 

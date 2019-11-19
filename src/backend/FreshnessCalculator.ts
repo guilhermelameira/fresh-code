@@ -39,20 +39,21 @@ function cloneRepo(repolink: string): string{
 /**
  * Removes the clone directory.
  */
-function removeClone(){
-    runShellCommand('rm -r clone', RESOURCE_DIR);
+export function removeClone(repoPath: string){
+    console.log("removing", repoPath)
+    // runShellCommand('rm -r ', repoPath);
 }
 
 /**
  * Returns the array of file paths returned from git ls-files on
  * the clone repository.
  * 
- * @param repositoryName name of the repository in src/resources/clone
+ * @param repoPath name of the repository in src/resources/clone
  */
-function getRepoFiles(repositoryName: string): string[]{
-    let cwd = CLONE_DIR + '/' + repositoryName;
-    console.log('running git ls-files on:  ' + cwd);
-    let filesNamesString = runShellCommand('git ls-files', CLONE_DIR + '/' + repositoryName);
+function getRepoFiles(repoPath: string): string[]{
+    let cwd = repoPath;
+    // console.log('running git ls-files on:  ' + cwd);
+    let filesNamesString = runShellCommand('git ls-files', repoPath);
     let fileNamesArray = formatOutputNewLine(filesNamesString);
     return fileNamesArray;
 }
@@ -64,8 +65,8 @@ function getRepoFiles(repositoryName: string): string[]{
  * @param filePathsArray array of file paths from git ls-files
  * @param rootNodeName name of the repository
  */
-function buildDirectoryTree(filePathsArray: string[], rootNodeName: string){
-    console.log('building directory tree');
+export function buildDirectoryTree(filePathsArray: string[], rootNodeName: string){
+    // console.log('building directory tree');
     let root = createNode(rootNodeName, "", {} as DirectoryNode, [], 0);
     for(let filePath of filePathsArray){
         insertNode("", filePath, root, true);
@@ -86,16 +87,16 @@ function insertNode(currentPath: string, remainingPath: string, parent: Director
     let remainingDirectories = remainingPath.split('/');
     let nodeName = remainingDirectories[0];
     let newPath = firstLevel? nodeName : (currentPath + '/' + nodeName);
-    console.log('=== inserting: '+ nodeName);
+    // console.log('=== inserting: '+ nodeName);
 
     if(remainingDirectories.length === 1){ // actual file to insert
-        console.log('last item');
+        // console.log('last item');
         let node = createNode(nodeName, newPath, parent, [], 0);
         parent.children.push(node);
         return;
     } else { 
         // path consists of multiple directories and a file
-        console.log('not last item')
+        // console.log('not last item')
         let node = findAndGetChild(nodeName, parent);
         remainingDirectories.shift();
         let pathToGo = remainingDirectories.join('/');
@@ -155,12 +156,12 @@ function findAndGetChild(childName: string, parent:DirectoryNode){
  * 
  * @param root root DirectoryNode
  */
-function printDirectory(root: DirectoryNode){
+function printDirectory(root: DirectoryNode, tabs: number){
     if(root.children.length === 0){
-        console.log(root.path);
+        console.log("\t".repeat(tabs) + root.path);
     } else {
         for(let child of root.children){
-            printDirectory(child);
+            printDirectory(child, tabs + 1);
         }
     }
 }
@@ -195,7 +196,7 @@ function getFreshness(fileName: string): number {
     return 0;
 }
 
-export { calculateFreshness };
+export { calculateFreshness, getRepoFiles, printDirectory };
 
 //repoName = cloneRepo('https://github.com/guilhermelameira/fresh-code.git');
 //let root = buildDirectoryTree(getRepoFiles('fresh-code'), "");

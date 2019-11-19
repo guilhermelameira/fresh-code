@@ -5,3 +5,14 @@ export interface DirectoryNode {
     children: DirectoryNode[];      
     freshnessScore: number;
 }
+
+export interface BlameData {
+    commitHash: string
+    author: string
+    timestamp: number
+}
+
+export interface FileBlame {
+    filePath: string
+    blameData: BlameData[]
+}
