@@ -7,6 +7,7 @@ exports.__esModule = true;
 var ShellCommander_1 = require("./ShellCommander");
 var CLONE_DIR = '../resources/clone';
 var RESOURCE_DIR = '../resources';
+var CODE_DIR = '../resources/clone/fresh-code'; // TODO remove this
 /**
  * Calculates freshness for each file in the repo and returns a
  * chart data node corresponding to the repo
@@ -29,9 +30,9 @@ exports.calculateFreshness = calculateFreshness;
 function cloneRepo(repolink) {
     ShellCommander_1.runShellCommand('mkdir clone', RESOURCE_DIR);
     ShellCommander_1.runShellCommand('git clone ' + repolink, CLONE_DIR);
-    var repoCloneOutput = ShellCommander_1.runShellCommand('ls', CLONE_DIR);
-    console.log('printinng repo: ' + repoCloneOutput);
-    return repoCloneOutput;
+    var repoName = ShellCommander_1.runShellCommand('ls', CLONE_DIR);
+    console.log('repo cloned: ' + repoName);
+    return repoName;
 }
 function removeClone() {
     ShellCommander_1.runShellCommand('rm -r clone', RESOURCE_DIR);
@@ -48,15 +49,16 @@ function buildDirectoryTree(filePathsArray, rootNodeName) {
     var root = createNode(rootNodeName, "", {}, [], 0);
     for (var _i = 0, filePathsArray_1 = filePathsArray; _i < filePathsArray_1.length; _i++) {
         var filePath = filePathsArray_1[_i];
-        insertNode("", filePath, root);
+        insertNode("", filePath, root, true);
     }
     console.log('____tree is done___');
-    printDirectory(root, "");
+    printDirectory(root);
+    return root;
 }
-function insertNode(currentPath, remainingPath, parent) {
+function insertNode(currentPath, remainingPath, parent, firstLevel) {
     var remainingDirectories = remainingPath.split('/');
     var nodeName = remainingDirectories[0];
-    var newPath = currentPath + '/' + nodeName;
+    var newPath = firstLevel ? nodeName : (currentPath + '/' + nodeName);
     console.log('=== inserting: ' + nodeName);
     if (remainingDirectories.length === 1) { // actual file to insert
         console.log('last item');
@@ -72,14 +74,14 @@ function insertNode(currentPath, remainingPath, parent) {
         var pathToGo = remainingDirectories.join('/');
         if (node) {
             // directory already exists
-            insertNode(newPath, pathToGo, node);
+            insertNode(newPath, pathToGo, node, false);
             return;
         }
         else {
             // create the directory and insert on it
             node = createNode(nodeName, newPath, parent, [], 0);
             parent.children.push(node);
-            insertNode(newPath, pathToGo, node);
+            insertNode(newPath, pathToGo, node, false);
             return;
         }
     }
@@ -102,19 +104,20 @@ function findAndGetChild(childName, parent) {
     }
     return null;
 }
-function printDirectory(root, currentPath) {
+function printDirectory(root) {
     if (root.children.length === 0) {
-        console.log(currentPath + '/' + root.name);
+        console.log(root.path);
     }
     else {
         for (var _i = 0, _a = root.children; _i < _a.length; _i++) {
             var child = _a[_i];
-            printDirectory(child, currentPath + '/' + root.name);
+            printDirectory(child);
         }
     }
 }
-//cloneRepo('https://github.com/guilhermelameira/fresh-code.git');
-//console.log('cloned');
-removeClone();
-//let filesArray = getRepoFiles('fresh-code');
-//buildDirectoryTree(filesArray, 'fresh-code');
+function getFreshness(filePath) {
+    console.log(ShellCommander_1.runShellCommand('git blame -t -- ' + filePath, CODE_DIR));
+}
+//let repo = cloneRepo('https://github.com/guilhermelameira/fresh-code.git');
+//removeClone();
+buildDirectoryTree(getRepoFiles('fresh-code'), "");
