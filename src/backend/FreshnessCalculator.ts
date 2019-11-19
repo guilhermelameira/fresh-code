@@ -10,6 +10,7 @@ import { DirectoryNode } from '../types/BackendTypes';
 const CLONE_DIR = '../resources/clone';
 const RESOURCE_DIR = '../resources';
 const CODE_DIR = '../resources/clone/fresh-code'; // TODO remove this
+let repoName = "";
 
 /**
  * Calculates freshness for each file in the repo and returns a
@@ -183,19 +184,20 @@ function calculateFreshnessForFiles(root: DirectoryNode){
 /**
  * Calculates and returns the freshness of a single file.
  * 
- * @param filePath path the to file from the clone repo
+ * @param fileName path the to file from the clone repo
  * e.g. src/resources/SampleChartInput.ts
  */
-function getFreshness(filePath: string): number {
+function getFreshness(fileName: string): number {
     // TODO: write git blame output into a file
     // TODO: and calculate the freshness from that output file
     // TODO: remove the file
+    //runShellCommand('git blame -t -- ' + fileName, CLONE_DIR + '/' + repoName);
     return 0;
 }
 
 export { calculateFreshness };
 
-//let repo = cloneRepo('https://github.com/guilhermelameira/fresh-code.git');
+//repoName = cloneRepo('https://github.com/guilhermelameira/fresh-code.git');
 //let root = buildDirectoryTree(getRepoFiles('fresh-code'), "");
 //printDirectory(root);
 //removeClone();
