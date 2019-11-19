@@ -3,7 +3,6 @@
  */
 
 import { execSync } from 'child_process';
-import { string } from '@amcharts/amcharts4/core';
 
 /**
  * Executes a shell command. Returns the error when 
