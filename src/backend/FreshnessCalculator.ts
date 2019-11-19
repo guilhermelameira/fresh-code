@@ -6,6 +6,7 @@
 import { formatOutputNewLine, runShellCommand } from './ShellCommander';
 import { DirectoryNode } from '../types/BackendTypes';
 const CLONE_DIR = '../resources/clone';
+const RESOURCE_DIR = '../resources';
 
 /**
  * Calculates freshness for each file in the repo and returns a
@@ -24,11 +25,20 @@ function calculateFreshness(repolink: string){
 }
 
 
+/**
+ * Clones the while github repository under src/resources/clone
+ * @param repolink github repository link
+ */
 function cloneRepo(repolink: string): string{
+    runShellCommand('mkdir clone', RESOURCE_DIR);
     runShellCommand('git clone ' + repolink, CLONE_DIR);
     let repoCloneOutput = runShellCommand('ls', CLONE_DIR);
     console.log('printinng repo: ' + repoCloneOutput);
     return repoCloneOutput;
+}
+
+function removeClone(){
+    runShellCommand('rm -r clone', RESOURCE_DIR);
 }
 
 function getRepoFiles(repositoryName: string): string[]{
@@ -116,6 +126,7 @@ function printDirectory(root: DirectoryNode, currentPath: string){
 export { calculateFreshness };
 
 //cloneRepo('https://github.com/guilhermelameira/fresh-code.git');
-let filesArray = getRepoFiles('fresh-code');
-buildDirectoryTree(filesArray, 'fresh-code');
+//removeClone();
+//let filesArray = getRepoFiles('fresh-code');
+//buildDirectoryTree(filesArray, 'fresh-code');
 

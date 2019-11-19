@@ -6,6 +6,7 @@ exports.__esModule = true;
 // TODO: remove logging
 var ShellCommander_1 = require("./ShellCommander");
 var CLONE_DIR = '../resources/clone';
+var RESOURCE_DIR = '../resources';
 /**
  * Calculates freshness for each file in the repo and returns a
  * chart data node corresponding to the repo
@@ -21,11 +22,19 @@ function calculateFreshness(repolink) {
     //remove the clone
 }
 exports.calculateFreshness = calculateFreshness;
+/**
+ * Clones the while github repository under src/resources/clone
+ * @param repolink github repository link
+ */
 function cloneRepo(repolink) {
+    ShellCommander_1.runShellCommand('mkdir clone', RESOURCE_DIR);
     ShellCommander_1.runShellCommand('git clone ' + repolink, CLONE_DIR);
     var repoCloneOutput = ShellCommander_1.runShellCommand('ls', CLONE_DIR);
     console.log('printinng repo: ' + repoCloneOutput);
     return repoCloneOutput;
+}
+function removeClone() {
+    ShellCommander_1.runShellCommand('rm -r clone', RESOURCE_DIR);
 }
 function getRepoFiles(repositoryName) {
     var cwd = CLONE_DIR + '/' + repositoryName;
@@ -105,5 +114,7 @@ function printDirectory(root, currentPath) {
     }
 }
 //cloneRepo('https://github.com/guilhermelameira/fresh-code.git');
-var filesArray = getRepoFiles('fresh-code');
-buildDirectoryTree(filesArray, 'fresh-code');
+//console.log('cloned');
+removeClone();
+//let filesArray = getRepoFiles('fresh-code');
+//buildDirectoryTree(filesArray, 'fresh-code');
