@@ -3,13 +3,13 @@ import * as fs from "fs";
 import * as path from "path";
 import {REPO_DIR} from "../Main";
 
-export function printFreshness(root: DirectoryNode, tabs: number, refTime: number) {
+export function printFreshnessRecursively(root: DirectoryNode, tabs: number, refTime: number) {
     if (root.children.length === 0) {
         let freshness = getFreshness(parseFile(root.path), refTime);
         console.log(`${"\t".repeat(tabs)}${root.path}\t${freshness}`)
     } else {
         for (let child of root.children) {
-            printFreshness(child, tabs + 1, refTime);
+            printFreshnessRecursively(child, tabs + 1, refTime);
         }
     }
 }
@@ -18,9 +18,9 @@ export function getFreshness(file: FileBlame, refTime: number): number {
     let val: number = 0.0;
     file.blameData.forEach((b: BlameData) => {
         const timeVal = (refTime - b.timestamp) / 604800;
-        val += 100 * Math.exp(-0.03 * timeVal);
+        val += Math.exp(-0.03 * timeVal);
     });
-    return val / file.blameData.length
+    return 100 * val / file.blameData.length
 }
 
 export function getOwnership(file: FileBlame): Map<string, number> {
@@ -53,6 +53,7 @@ export function parseFile(filePath: string): FileBlame {
         });
         return {
             filePath,
+            lineCount: lines.length,
             blameData
         } as FileBlame
     } catch (err) {
@@ -60,3 +61,17 @@ export function parseFile(filePath: string): FileBlame {
         return {} as FileBlame
     }
 }
+
+
+export const countLines = function (filePath: string, callback: (e: any, n: number) => void) {
+    // function copied from http://stackoverflow.com/questions/12453057/node-js-count-the-number-of-lines-in-a-file
+    // with very few modifications
+    let i;
+    let count = 0;
+    fs.createReadStream(filePath)
+        .on('error', e => callback(e, 0))
+        .on('data', chunk => {
+            for (i=0; i < chunk.length; ++i) if (chunk[i] == 10) count++;
+        })
+        .on('end', () => callback(null, count));
+};
