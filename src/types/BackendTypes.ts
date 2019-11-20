@@ -2,7 +2,8 @@ export interface DirectoryNode {
     name: string;
     path: string;
     parent: DirectoryNode | null ;  // head if this is null
-    children: DirectoryNode[];      
+    children: DirectoryNode[];
+    lineCount: number
     freshnessScore: number;
 }
 
@@ -14,5 +15,6 @@ export interface BlameData {
 
 export interface FileBlame {
     filePath: string
+    lineCount: number
     blameData: BlameData[]
 }

@@ -3,22 +3,14 @@
  * File to calculate repo freshness.
  */
 exports.__esModule = true;
-// TODO !!!: remove logging 
+// TODO !!!: remove logging
 var ShellCommander_1 = require("./ShellCommander");
+var SampleChartInput_1 = require("../resources/SampleChartInput");
+var Parser_1 = require("./Parser");
 var CLONE_DIR = '../resources/clone';
 var RESOURCE_DIR = '../resources';
 var CODE_DIR = '../resources/clone/fresh-code'; // TODO remove this
 var repoName = "";
-/**
- * Calculates freshness for each file in the repo and returns a
- * chart data node corresponding to the repo.
- *
- * @param repolink repolink to a public github repository
- */
-function calculateFreshness(repolink) {
-    // TODO
-}
-exports.calculateFreshness = calculateFreshness;
 /**
  * Clones the while github repository under src/resources/clone.
  *
@@ -149,12 +141,14 @@ function findAndGetChild(childName, parent) {
  * must give the result of git ls-files on the same dir.
  *
  * @param root root DirectoryNode
+ * @param tabs number of tabs
  */
 function printDirectory(root, tabs) {
     if (root.children.length === 0) {
-        console.log("\t".repeat(tabs) + root.path);
+        console.log("" + "\t".repeat(tabs) + root.path + "\t" + root.freshnessScore.toString(10).padStart(10));
     }
     else {
+        console.log("" + "\t".repeat(tabs) + root.path + "\t" + root.freshnessScore.toString(10).padStart(10));
         for (var _i = 0, _a = root.children; _i < _a.length; _i++) {
             var child = _a[_i];
             printDirectory(child, tabs + 1);
@@ -162,36 +156,65 @@ function printDirectory(root, tabs) {
     }
 }
 exports.printDirectory = printDirectory;
-/**
- * Calculates the freshness score of the whole tree.
- *
- * @param root root of the tree to start calculating freshness
- */
-function calculateFreshnessForFiles(root) {
+function calculateFreshnessForFiles(root, refTime) {
     if (root.children.length === 0) {
         // LEAF so calculate freshness
-        root.freshnessScore = getFreshness(root.path);
+        var x = Parser_1.parseFile(root.path);
+        root.freshnessScore = Parser_1.getFreshness(x, refTime);
+        root.lineCount = x.lineCount;
     }
     else {
-        for (var _i = 0, _a = root.children; _i < _a.length; _i++) {
-            var child = _a[_i];
-            calculateFreshnessForFiles(child);
-        }
+        root.children.forEach(function (child) {
+            calculateFreshnessForFiles(child, refTime);
+        });
+        root.lineCount = root.children.map(function (e) { return e.lineCount; }).reduce(function (a, b) { return a + b; }, 0);
+        root.freshnessScore = root.children.map(function (e) { return e.freshnessScore; }).reduce(function (a, b) { return a + b; }, 0) / root.children.length;
     }
 }
-/**
- * Calculates and returns the freshness of a single file.
- *
- * @param fileName path the to file from the clone repo
- * e.g. src/resources/SampleChartInput.ts
- */
-function getFreshness(fileName) {
-    // TODO: write git blame output into a file
-    // TODO: and calculate the freshness from that output file
-    // TODO: remove the file
-    //runShellCommand('git blame -t -- ' + fileName, CLONE_DIR + '/' + repoName);
-    return 0;
+exports.calculateFreshnessForFiles = calculateFreshnessForFiles;
+function generateGraphData(root) {
+    if (root.children.length === 0) {
+        return {
+            name: root.name,
+            size: root.lineCount,
+            heat: root.freshnessScore,
+            image: SampleChartInput_1.FILE_ICON,
+            info: [
+                {
+                    name: "Path",
+                    value: root.path
+                },
+                {
+                    name: "Freshness",
+                    value: root.freshnessScore
+                },
+                {
+                    name: "Line Count",
+                    value: root.lineCount
+                }
+            ]
+        };
+    }
+    else {
+        return {
+            name: root.name,
+            heat: root.freshnessScore,
+            info: [
+                {
+                    name: "File Count",
+                    value: root.children.length
+                },
+                {
+                    name: "Freshness",
+                    value: root.freshnessScore
+                }
+            ],
+            image: SampleChartInput_1.FOLDER_ICON,
+            children: root.children.map(function (child) { return generateGraphData(child); })
+        };
+    }
 }
+exports.generateGraphData = generateGraphData;
 //repoName = cloneRepo('https://github.com/guilhermelameira/fresh-code.git');
 //let root = buildDirectoryTree(getRepoFiles('fresh-code'), "");
 //printDirectory(root);

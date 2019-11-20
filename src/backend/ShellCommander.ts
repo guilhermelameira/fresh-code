@@ -2,7 +2,7 @@
  * File for executing shell commands and getting formatted outputs.
  */
 
-import { execSync } from 'child_process';
+import {execSync} from 'child_process';
 
 /**
  * Executes a shell command. Returns the error when 
