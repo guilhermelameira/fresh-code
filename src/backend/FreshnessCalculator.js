@@ -215,7 +215,3 @@ function generateGraphData(root) {
     }
 }
 exports.generateGraphData = generateGraphData;
-//repoName = cloneRepo('https://github.com/guilhermelameira/fresh-code.git');
-//let root = buildDirectoryTree(getRepoFiles('fresh-code'), "");
-//printDirectory(root);
-//removeClone();

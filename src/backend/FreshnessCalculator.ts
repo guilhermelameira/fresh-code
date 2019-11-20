@@ -9,7 +9,7 @@ import {formatOutputNewLine, runShellCommand} from './ShellCommander';
 import {DirectoryNode} from '../types/BackendTypes';
 import {ChartDataBranch, ChartDataLeaf, ChartDataNode} from "../types/ChartTypes";
 import {FILE_ICON, FOLDER_ICON} from "../resources/SampleChartInput";
-import {getFreshness, parseFile} from "./Parser";
+import {getFreshness, getOwnership, parseFile} from "./Parser";
 
 const CLONE_DIR = '../resources/clone';
 const RESOURCE_DIR = '../resources';
@@ -166,6 +166,7 @@ export function calculateFreshnessForFiles(root: DirectoryNode, refTime: number)
         // LEAF so calculate freshness
         const x = parseFile(root.path);
         root.freshnessScore = getFreshness(x, refTime);
+        root.ownership = getOwnership(x, refTime);
         root.lineCount = x.lineCount;
     } else {
         root.children.forEach((child) => {
@@ -176,11 +177,33 @@ export function calculateFreshnessForFiles(root: DirectoryNode, refTime: number)
     }
 }
 
+function generateOwnershipData(ownership: Map<string, [number, number]>): ChartDataLeaf[] {
+     {
+        name: root.name,
+        heat: root.freshnessScore,
+        image: FILE_ICON,
+        info: [
+            {
+                name: "Path",
+                value: root.path
+            },
+            {
+                name: "Freshness",
+                value: root.freshnessScore
+            },
+            {
+                name: "Line Count",
+                value: root.lineCount
+            }
+        ],
+        children: generateOwnershipData(root.ownership!)
+    } as ChartDataBranch
+}
+
 export function generateGraphData(root: DirectoryNode): ChartDataNode {
     if (root.children.length === 0) {
         return {
             name: root.name,
-            size: root.lineCount,
             heat: root.freshnessScore,
             image: FILE_ICON,
             info: [
@@ -196,8 +219,9 @@ export function generateGraphData(root: DirectoryNode): ChartDataNode {
                     name: "Line Count",
                     value: root.lineCount
                 }
-            ]
-        } as ChartDataLeaf
+            ],
+            children: generateOwnershipData(root.ownership!)
+        } as ChartDataBranch
     } else {
         return {
             name: root.name,
