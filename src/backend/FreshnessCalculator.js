@@ -5,6 +5,7 @@
 exports.__esModule = true;
 // TODO !!!: remove logging 
 var ShellCommander_1 = require("./ShellCommander");
+var Parser_1 = require("./Parser");
 var CLONE_DIR = '../resources/clone';
 var RESOURCE_DIR = '../resources';
 var CODE_DIR = '../resources/clone/fresh-code'; // TODO remove this
@@ -18,7 +19,6 @@ var repoName = "";
 function calculateFreshness(repolink) {
     // TODO
 }
-exports.calculateFreshness = calculateFreshness;
 /**
  * Clones the while github repository under src/resources/clone.
  *
@@ -152,7 +152,7 @@ function findAndGetChild(childName, parent) {
  */
 function printDirectory(root, tabs) {
     if (root.children.length === 0) {
-        console.log("\t".repeat(tabs) + root.path);
+        console.log("\t".repeat(tabs) + root.path + ' ' + root.freshnessScore);
     }
     else {
         for (var _i = 0, _a = root.children; _i < _a.length; _i++) {
@@ -170,29 +170,47 @@ exports.printDirectory = printDirectory;
 function calculateFreshnessForFiles(root) {
     if (root.children.length === 0) {
         // LEAF so calculate freshness
-        root.freshnessScore = getFreshness(root.path);
+        var score = getFreshness(root.name, root.path);
+        root.freshnessScore = score;
+        return score;
     }
     else {
+        var totalScore = 0;
+        var numChildren = root.children.length;
         for (var _i = 0, _a = root.children; _i < _a.length; _i++) {
             var child = _a[_i];
-            calculateFreshnessForFiles(child);
+            totalScore += calculateFreshnessForFiles(child);
         }
+        return Math.ceil(totalScore / numChildren);
     }
 }
+exports.calculateFreshnessForFiles = calculateFreshnessForFiles;
 /**
  * Calculates and returns the freshness of a single file.
  *
  * @param fileName path the to file from the clone repo
  * e.g. src/resources/SampleChartInput.ts
  */
-function getFreshness(fileName) {
+function getFreshness(fileName, filePath) {
+    var blameString = 'git blame -t -C -M -- ' + filePath
+        + '  > "' + fileName + '.adat"';
+    ShellCommander_1.runShellCommand(blameString, CODE_DIR);
+    var blameFile = Parser_1.parseFile(fileName);
+    var now = Date.now();
+    console.log('now: ' + now);
+    var freshness = Parser_1.calculateFreshnessScore(blameFile, now / 1000); // get UTC seconds by /1000 
+    console.log('freshness for ' + fileName + ' is : ' + freshness);
+    ShellCommander_1.runShellCommand('rm ' + fileName + '.adat', CODE_DIR);
     // TODO: write git blame output into a file
     // TODO: and calculate the freshness from that output file
     // TODO: remove the file
     //runShellCommand('git blame -t -- ' + fileName, CLONE_DIR + '/' + repoName);
-    return 0;
+    return Math.ceil(freshness);
 }
 //repoName = cloneRepo('https://github.com/guilhermelameira/fresh-code.git');
-//let root = buildDirectoryTree(getRepoFiles('fresh-code'), "");
-//printDirectory(root);
+var root = buildDirectoryTree(getRepoFiles(CODE_DIR), "");
+//printDirectory(root, 0);
+calculateFreshnessForFiles(root);
+printDirectory(root, 0);
+//getFreshness('.gitignore', '.gitignore');
 //removeClone();

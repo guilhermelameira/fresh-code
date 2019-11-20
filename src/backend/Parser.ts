@@ -1,18 +1,26 @@
 import {BlameData, DirectoryNode, FileBlame} from "../types/BackendTypes";
 import * as fs from "fs";
 import * as path from "path";
-import {REPO_DIR} from "../Main";
+//import {REPO_DIR} from "../Main"; // TODO
+const REPO_DIR = '../resources/clone/fresh-code';
 
 function f(root: DirectoryNode) {
 
 }
 
-export function getFreshness(file: FileBlame, refTime: number) {
+// note: very qualitative...
+export function calculateFreshnessScore(file: FileBlame, refTime: number) {
     let val: number = 0.0;
+    let dayCalculationDivisor = 60 * 60 * 24;
     file.blameData.forEach((b: BlameData) => {
+        let dayBetween = ( refTime - b.timestamp)/ dayCalculationDivisor;
         // TODO fix
-        console.log(Math.exp(-0.03 * (refTime - b.timestamp)))
-        val += 100 * Math.exp(-0.03 * (refTime - b.timestamp));
+        //console.log(Math.exp(-0.03 * (refTime - b.timestamp)))
+        //val += 100 * Math.exp(-0.03 * (refTime - b.timestamp));
+        //console.log(( refTime - b.timestamp)/ dayCalculationDivisor )
+        let lineValue = dayBetween > 150 ? 150 : dayBetween;
+        val += lineValue;
+        //val += 100 * Math.exp(-0.03 * (refTime - b.timestamp));
     });
     return val / file.blameData.length
 }

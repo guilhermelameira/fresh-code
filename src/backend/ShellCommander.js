@@ -6,7 +6,8 @@ exports.__esModule = true;
 var child_process_1 = require("child_process");
 /**
  * Executes a shell command. Returns the error when
- * an error occurs, otherwise the output
+ * an error occurs, otherwise the output.
+ *
  * @param commandString command string to run on terminal
  * @param cwd directory to run commands
  */
@@ -26,7 +27,8 @@ function runShellCommand(commandString, cwd) {
 exports.runShellCommand = runShellCommand;
 /**
  * Returns an array of strings in which each element corresponds
- * to a string divided by a new line
+ * to a string divided by a new line.
+ *
  * @param output output string from a shell command execution
  */
 function formatOutputNewLine(output) {
