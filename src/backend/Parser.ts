@@ -2,7 +2,8 @@ import {BlameData, DirectoryNode, FileBlame} from "../types/BackendTypes";
 import * as fs from "fs";
 import * as path from "path";
 //import {REPO_DIR} from "../Main"; // TODO
-const REPO_DIR = '../resources/clone/fresh-code';
+const REPO_DIR = '../resources/clone/fresh-code'; /* TODO: this must be 
+ created at runtime!!! */
 
 function f(root: DirectoryNode) {
 

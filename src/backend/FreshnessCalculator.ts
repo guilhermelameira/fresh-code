@@ -10,7 +10,7 @@ import { DirectoryNode } from '../types/BackendTypes';
 import { parseFile, calculateFreshnessScore } from './Parser';
 const CLONE_DIR = '../resources/clone';
 const RESOURCE_DIR = '../resources';
-const CODE_DIR = '../resources/clone/fresh-code'; // TODO remove this
+const CODE_DIR = '../resources/clone/fresh-code'; // TODO this must be calculated at runtime
 let repoName = "";
 
 /**
@@ -204,15 +204,12 @@ function getFreshness(fileName: string, filePath: string): number {
     let freshness = calculateFreshnessScore(blameFile, now/1000); // get UTC seconds by /1000 
     console.log('freshness for ' + fileName + ' is : ' + freshness);
     runShellCommand('rm '+fileName+'.adat', CODE_DIR);
-    // TODO: write git blame output into a file
-    // TODO: and calculate the freshness from that output file
-    // TODO: remove the file
-    //runShellCommand('git blame -t -- ' + fileName, CLONE_DIR + '/' + repoName);
     return Math.ceil(freshness);
 }
 
 
 export { calculateFreshnessForFiles, getRepoFiles, printDirectory };
+
 
 //repoName = cloneRepo('https://github.com/guilhermelameira/fresh-code.git');
 let root = buildDirectoryTree(getRepoFiles(CODE_DIR), "");
