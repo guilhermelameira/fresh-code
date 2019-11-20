@@ -5,6 +5,7 @@ export interface DirectoryNode {
     children: DirectoryNode[];
     lineCount: number
     freshnessScore: number;
+    ownership?: Map<string, [number, number]> // map of contributor name to [ownership, line_count]
 }
 
 export interface BlameData {

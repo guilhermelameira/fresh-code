@@ -23,14 +23,15 @@ export function getFreshness(file: FileBlame, refTime: number): number {
     return 100 * val / file.blameData.length
 }
 
-export function getOwnership(file: FileBlame): Map<string, number> {
-    let val: Map<string, number> = new Map<string, number>();
+export function getOwnership(file: FileBlame, refTime: number): Map<string, [number, number]> {
+    let val: Map<string, [number, number]> = new Map<string, [number, number]>();
     file.blameData.forEach((b: BlameData) => {
-        let cur = val.get(b.author) || 0;
-        val.set(b.author, cur + (100 * Math.exp(-0.03 * b.timestamp)));
+        let cur = val.get(b.author) || [0, 0];
+        const timeVal = (refTime - b.timestamp) / 604800;
+        val.set(b.author, [cur[0] + (100 * Math.exp(-0.03 * timeVal)), cur[1] + 1]);
     });
     val.forEach((value, key) => {
-        val.set(key, value / file.blameData.length)
+        val.set(key, [value[0] / file.blameData.length, value[1]])
     });
     return val;
 }
