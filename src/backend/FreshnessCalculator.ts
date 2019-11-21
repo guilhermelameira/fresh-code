@@ -182,7 +182,6 @@ function generateOwnershipData(ownership: Map<string, [number, number]>): ChartD
     ownership.forEach((val, key) => {
         ret.push({
             name: key,
-            heat: val[0],
             size: val[1],
             image: FILE_ICON,
             info: [
@@ -202,6 +201,7 @@ function generateOwnershipData(ownership: Map<string, [number, number]>): ChartD
 
 export function generateGraphData(root: DirectoryNode): ChartDataNode {
     if (root.children.length === 0) {
+        let ownershipData = generateOwnershipData(root.ownership!);
         return {
             name: root.name,
             heat: root.freshnessScore,
@@ -218,9 +218,13 @@ export function generateGraphData(root: DirectoryNode): ChartDataNode {
                 {
                     name: "Line Count",
                     value: root.lineCount
+                },
+                {
+                    name: "Contributors",
+                    value: ownershipData.length
                 }
             ],
-            children: generateOwnershipData(root.ownership!)
+            children: ownershipData
         } as ChartDataBranch
     } else {
         return {

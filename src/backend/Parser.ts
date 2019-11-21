@@ -44,7 +44,10 @@ export function parseFile(filePath: string): FileBlame {
             let tokens = l.match(/\S+/g) as string[];
             // console.log("TOKENS", tokens[0], tokens[1], tokens[2]);
             const commitHash = tokens[0];
-            const author = tokens[2];
+            const author = tokens[2].substring(
+                tokens[2].lastIndexOf("<") + 1,
+                tokens[2].lastIndexOf(">")
+            );
             const timestamp = parseInt(tokens[3], 10);
             return {
                 commitHash,

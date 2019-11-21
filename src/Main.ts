@@ -22,7 +22,7 @@ class Main {
         let root = buildDirectoryTree(files, "repo");
         calculateFreshnessForFiles(root, 1571768680);
         let graph = generateGraphData(root);
-        console.log(graph);
+        // console.log(graph);
         this.writeToFile(graph);
         // removeClone();
 

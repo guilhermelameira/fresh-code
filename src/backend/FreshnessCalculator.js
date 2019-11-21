@@ -178,7 +178,6 @@ function generateOwnershipData(ownership) {
     ownership.forEach(function (val, key) {
         ret.push({
             name: key,
-            heat: val[0],
             size: val[1],
             image: SampleChartInput_1.FILE_ICON,
             info: [
