@@ -6,7 +6,7 @@
 
 
 import {formatOutputNewLine, runShellCommand} from './ShellCommander';
-import {DirectoryNode} from '../types/BackendTypes';
+import {DirectoryNode, FileBlame} from '../types/BackendTypes';
 import {ChartDataBranch, ChartDataLeaf, ChartDataNode} from "../types/ChartTypes";
 import {FILE_ICON, FOLDER_ICON} from "../resources/SampleChartInput";
 import {getFreshness, getOwnership, parseFile} from "./Parser";
@@ -165,9 +165,9 @@ export function calculateFreshnessForFiles(root: DirectoryNode, refTime: number)
     if (root.children.length === 0) {
         // LEAF so calculate freshness
         const x = parseFile(root.path);
+        root.lineCount = x.lineCount;
         root.freshnessScore = getFreshness(x, refTime);
         root.ownership = getOwnership(x, refTime);
-        root.lineCount = x.lineCount;
     } else {
         root.children.forEach((child) => {
             calculateFreshnessForFiles(child, refTime);
