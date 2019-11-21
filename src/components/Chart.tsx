@@ -18,7 +18,7 @@ interface ExtendedChartDataLeaf extends ChartDataLeaf {
 function isExtendedBranch(node: ExtendedChartDataNode): node is ExtendedChartDataBranch {
     return isBranch(node as ChartDataNode);
 }
-const MIN_SIZE = 5; 
+const MIN_SIZE = 10; 
 class Chart extends Component<ChartProps> {
     chart?: am4charts.TreeMap;
     componentDidMount() {
@@ -119,7 +119,7 @@ class Chart extends Component<ChartProps> {
     private scaleSize(repo: ExtendedChartDataNode): ExtendedChartDataNode {
         let helper = (node: ExtendedChartDataNode) => {
             if (!isExtendedBranch(node)) {
-                node.size = node.size? Math.max(Math.log(node.size+1), MIN_SIZE) : MIN_SIZE;
+                node.size = node.size? Math.max(Math.log(node.size+1)/Math.log(1.2), MIN_SIZE) : MIN_SIZE;
             }
             if (isExtendedBranch(node)) {
                 node.children.forEach(helper);
