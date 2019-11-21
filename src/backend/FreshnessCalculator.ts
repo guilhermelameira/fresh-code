@@ -166,12 +166,16 @@ export function calculateFreshnessForFiles(root: DirectoryNode, refTime: number)
         // LEAF so calculate freshness
         const x = parseFile(root.path);
         root.lineCount = x.lineCount;
+        if (x.lineCount === -1) {
+            return
+        }
         root.freshnessScore = getFreshness(x, refTime);
         root.ownership = getOwnership(x, refTime);
     } else {
         root.children.forEach((child) => {
             calculateFreshnessForFiles(child, refTime);
         });
+        root.children = root.children.filter((e) => e.lineCount !== -1);
         root.lineCount = root.children.map((e) => e.lineCount).reduce((a, b) => a + b, 0);
         root.freshnessScore = root.children.map((e) => e.freshnessScore).reduce((a, b) => a + b, 0) / root.children.length
     }

@@ -1,1 +1,4687 @@
-{"name":"repo","heat":20.195729116990936,"info":[{"name":"File Count","value":19},{"name":"Freshness","value":20.195729116990936}],"image":"https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png","children":[{"name":".gitignore","heat":19.475904218251838,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":".gitignore"},{"name":"Freshness","value":19.475904218251838},{"name":"Line Count","value":23},{"name":"Contributors","value":2}],"children":[{"name":"prayansh@users.noreply.github.com","size":22,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":22},{"name":"Ownership","value":18.609810902409762}]},{"name":"prayansh@gmail.com","size":1,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":1},{"name":"Ownership","value":0.8660933158420867}]}]},{"name":"AIPlayer.hs","heat":20.222075738767924,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":"AIPlayer.hs"},{"name":"Freshness","value":20.222075738767924},{"name":"Line Count","value":125},{"name":"Contributors","value":3}],"children":[{"name":"gui.l.a@hotmail.com","size":20,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":20},{"name":"Ownership","value":3.2574121197137758}]},{"name":"prayansh@gmail.com","size":90,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":90},{"name":"Ownership","value":14.534631319990709}]},{"name":"mingyu.gao96@gmail.com","size":15,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":15},{"name":"Ownership","value":2.43003229906345}]}]},{"name":"BetterHeuristicPlayer.hs","heat":20.420817622467542,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":"BetterHeuristicPlayer.hs"},{"name":"Freshness","value":20.420817622467542},{"name":"Line Count","value":140},{"name":"Contributors","value":1}],"children":[{"name":"prayansh@gmail.com","size":140,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":140},{"name":"Ownership","value":20.420817622467634}]}]},{"name":"GameHelper.hs","heat":20.008263277202172,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":"GameHelper.hs"},{"name":"Freshness","value":20.008263277202172},{"name":"Line Count","value":22},{"name":"Contributors","value":2}],"children":[{"name":"gui.l.a@hotmail.com","size":7,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":7},{"name":"Ownership","value":6.36557994152542}]},{"name":"prayansh@gmail.com","size":15,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":15},{"name":"Ownership","value":13.642683335676754}]}]},{"name":"GameIO.hs","heat":20.22287739736832,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":"GameIO.hs"},{"name":"Freshness","value":20.22287739736832},{"name":"Line Count","value":92},{"name":"Contributors","value":2}],"children":[{"name":"gui.l.a@hotmail.com","size":9,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":9},{"name":"Ownership","value":1.953177704865556}]},{"name":"prayansh@gmail.com","size":83,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":83},{"name":"Ownership","value":18.269699692502762}]}]},{"name":"GameVisualization.hs","heat":19.805994945796456,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":"GameVisualization.hs"},{"name":"Freshness","value":19.805994945796456},{"name":"Line Count","value":95},{"name":"Contributors","value":2}],"children":[{"name":"gui.l.a@hotmail.com","size":68,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":68},{"name":"Ownership","value":14.091170942904304}]},{"name":"prayansh@gmail.com","size":27,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":27},{"name":"Ownership","value":5.7148240028921595}]}]},{"name":"GuiAI.hs","heat":20.509990331308167,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":"GuiAI.hs"},{"name":"Freshness","value":20.509990331308167},{"name":"Line Count","value":60},{"name":"Contributors","value":1}],"children":[{"name":"gui.l.a@hotmail.com","size":60,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":60},{"name":"Ownership","value":20.509990331308156}]}]},{"name":"GuiHeuristic.hs","heat":20.509990331308167,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":"GuiHeuristic.hs"},{"name":"Freshness","value":20.509990331308167},{"name":"Line Count","value":74},{"name":"Contributors","value":1}],"children":[{"name":"gui.l.a@hotmail.com","size":74,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":74},{"name":"Ownership","value":20.509990331308174}]}]},{"name":"HeuristicPlayer.hs","heat":20.286587946175242,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":"HeuristicPlayer.hs"},{"name":"Freshness","value":20.286587946175242},{"name":"Line Count","value":110},{"name":"Contributors","value":1}],"children":[{"name":"prayansh@gmail.com","size":110,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":110},{"name":"Ownership","value":20.286587946175267}]}]},{"name":"HumanPlayer.hs","heat":20.065807316697892,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":"HumanPlayer.hs"},{"name":"Freshness","value":20.065807316697892},{"name":"Line Count","value":38},{"name":"Contributors","value":2}],"children":[{"name":"gui.l.a@hotmail.com","size":15,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":15},{"name":"Ownership","value":7.893781909631702}]},{"name":"prayansh@gmail.com","size":23,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":23},{"name":"Ownership","value":12.172025407066196}]}]},{"name":"Ming_Minimax.hs","heat":20.517274909402662,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":"Ming_Minimax.hs"},{"name":"Freshness","value":20.517274909402662},{"name":"Line Count","value":91},{"name":"Contributors","value":1}],"children":[{"name":"mingyu.gao96@gmail.com","size":91,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":91},{"name":"Ownership","value":20.517274909402662}]}]},{"name":"Minimax.hs","heat":20.183517721226938,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":"Minimax.hs"},{"name":"Freshness","value":20.183517721226938},{"name":"Line Count","value":50},{"name":"Contributors","value":1}],"children":[{"name":"mingyu.gao96@gmail.com","size":50,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":50},{"name":"Ownership","value":20.183517721226956}]}]},{"name":"README.md","heat":20.19903300820406,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":"README.md"},{"name":"Freshness","value":20.19903300820406},{"name":"Line Count","value":32},{"name":"Contributors","value":3}],"children":[{"name":"prayansh@users.noreply.github.com","size":6,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":6},{"name":"Ownership","value":3.7128703699861716}]},{"name":"prayansh@gmail.com","size":24,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":24},{"name":"Ownership","value":15.203252723624262}]},{"name":"gui.l.a@hotmail.com","size":2,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":2},{"name":"Ownership","value":1.2829099145936322}]}]},{"name":"Test.hs","heat":20.13689437389054,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":"Test.hs"},{"name":"Freshness","value":20.13689437389054},{"name":"Line Count","value":46},{"name":"Contributors","value":3}],"children":[{"name":"prayansh@gmail.com","size":30,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":30},{"name":"Ownership","value":13.118733240101095}]},{"name":"gui.l.a@hotmail.com","size":3,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":3},{"name":"Ownership","value":1.3141235169209706}]},{"name":"mingyu.gao96@gmail.com","size":13,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":13},{"name":"Ownership","value":5.704037616868482}]}]},{"name":"TestBetterHeuristic.hs","heat":20.509008601795184,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":"TestBetterHeuristic.hs"},{"name":"Freshness","value":20.509008601795184},{"name":"Line Count","value":30},{"name":"Contributors","value":1}],"children":[{"name":"prayansh@gmail.com","size":30,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":30},{"name":"Ownership","value":20.509008601795177}]}]},{"name":"TestHeuristic.hs","heat":20.350381533395645,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":"TestHeuristic.hs"},{"name":"Freshness","value":20.350381533395645},{"name":"Line Count","value":15},{"name":"Contributors","value":1}],"children":[{"name":"prayansh@gmail.com","size":15,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":15},{"name":"Ownership","value":20.350381533395648}]}]},{"name":"TreeDict.hs","heat":20.18351772122692,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":"TreeDict.hs"},{"name":"Freshness","value":20.18351772122692},{"name":"Line Count","value":79},{"name":"Contributors","value":1}],"children":[{"name":"mingyu.gao96@gmail.com","size":79,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":79},{"name":"Ownership","value":20.183517721226956}]}]},{"name":"TypeDef.hs","heat":20.03316974638647,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":"TypeDef.hs"},{"name":"Freshness","value":20.03316974638647},{"name":"Line Count","value":188},{"name":"Contributors","value":2}],"children":[{"name":"prayansh@gmail.com","size":173,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":173},{"name":"Ownership","value":18.42469389772514}]},{"name":"gui.l.a@hotmail.com","size":15,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":15},{"name":"Ownership","value":1.6084758486612527}]}]},{"name":"UltimateTicTacToe.hs","heat":20.07774648195562,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Path","value":"UltimateTicTacToe.hs"},{"name":"Freshness","value":20.07774648195562},{"name":"Line Count","value":116},{"name":"Contributors","value":3}],"children":[{"name":"prayansh@gmail.com","size":88,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":88},{"name":"Ownership","value":15.208921675686637}]},{"name":"mingyu.gao96@gmail.com","size":26,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":26},{"name":"Ownership","value":4.523891903033626}]},{"name":"gui.l.a@hotmail.com","size":2,"image":"https://image.flaticon.com/icons/png/512/55/55025.png","info":[{"name":"Lines Contributed","value":2},{"name":"Ownership","value":0.34493290323536757}]}]}]}
+{
+  "name": "repo",
+  "heat": 7.095921214132521,
+  "info": [
+    {
+      "name": "File Count",
+      "value": 19
+    },
+    {
+      "name": "Freshness",
+      "value": 7.095921214132521
+    }
+  ],
+  "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+  "children": [
+    {
+      "name": ".buildscript",
+      "heat": 0.44610459956673165,
+      "info": [
+        {
+          "name": "File Count",
+          "value": 1
+        },
+        {
+          "name": "Freshness",
+          "value": 0.44610459956673165
+        }
+      ],
+      "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+      "children": [
+        {
+          "name": "bootstrap.sh",
+          "heat": 0.44610459956673165,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": ".buildscript/bootstrap.sh"
+            },
+            {
+              "name": "Freshness",
+              "value": 0.44610459956673165
+            },
+            {
+              "name": "Line Count",
+              "value": 45
+            },
+            {
+              "name": "Contributors",
+              "value": 1
+            }
+          ],
+          "children": [
+            {
+              "name": "f2prateek@gmail.com",
+              "size": 45,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 45
+                },
+                {
+                  "name": "Ownership",
+                  "value": 0.4461045995667313
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".circleci",
+      "heat": 16.683855394248,
+      "info": [
+        {
+          "name": "File Count",
+          "value": 1
+        },
+        {
+          "name": "Freshness",
+          "value": 16.683855394248
+        }
+      ],
+      "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+      "children": [
+        {
+          "name": "config.yml",
+          "heat": 16.683855394248,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": ".circleci/config.yml"
+            },
+            {
+              "name": "Freshness",
+              "value": 16.683855394248
+            },
+            {
+              "name": "Line Count",
+              "value": 51
+            },
+            {
+              "name": "Contributors",
+              "value": 3
+            }
+          ],
+          "children": [
+            {
+              "name": "fathy.boundjadj@gmail.com",
+              "size": 32,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 32
+                },
+                {
+                  "name": "Ownership",
+                  "value": 10.490996986296478
+                }
+              ]
+            },
+            {
+              "name": "nhi.nguyen@segment.com",
+              "size": 18,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 18
+                },
+                {
+                  "name": "Ownership",
+                  "value": 6.171799007147131
+                }
+              ]
+            },
+            {
+              "name": "tonyx.ca@gmail.com",
+              "size": 1,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 1
+                },
+                {
+                  "name": "Ownership",
+                  "value": 0.021059400804398224
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".github",
+      "heat": 20.134577467577994,
+      "info": [
+        {
+          "name": "File Count",
+          "value": 2
+        },
+        {
+          "name": "Freshness",
+          "value": 20.134577467577994
+        }
+      ],
+      "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+      "children": [
+        {
+          "name": "PULL_REQUEST_TEMPLATE.md",
+          "heat": 1.6421809335383675,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": ".github/PULL_REQUEST_TEMPLATE.md"
+            },
+            {
+              "name": "Freshness",
+              "value": 1.6421809335383675
+            },
+            {
+              "name": "Line Count",
+              "value": 16
+            },
+            {
+              "name": "Contributors",
+              "value": 1
+            }
+          ],
+          "children": [
+            {
+              "name": "tonyx.ca@gmail.com",
+              "size": 16,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 16
+                },
+                {
+                  "name": "Ownership",
+                  "value": 1.6421809335383672
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "stale.yml",
+          "heat": 38.62697400161762,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": ".github/stale.yml"
+            },
+            {
+              "name": "Freshness",
+              "value": 38.62697400161762
+            },
+            {
+              "name": "Line Count",
+              "value": 12
+            },
+            {
+              "name": "Contributors",
+              "value": 1
+            }
+          ],
+          "children": [
+            {
+              "name": "f2prateek@gmail.com",
+              "size": 12,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 12
+                },
+                {
+                  "name": "Ownership",
+                  "value": 38.62697400161761
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": ".gitignore",
+      "heat": 0.33290633705114264,
+      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+      "info": [
+        {
+          "name": "Path",
+          "value": ".gitignore"
+        },
+        {
+          "name": "Freshness",
+          "value": 0.33290633705114264
+        },
+        {
+          "name": "Line Count",
+          "value": 34
+        },
+        {
+          "name": "Contributors",
+          "value": 3
+        }
+      ],
+      "children": [
+        {
+          "name": "f2prateek@gmail.com",
+          "size": 27,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 27
+            },
+            {
+              "name": "Ownership",
+              "value": 0.14317962860468686
+            }
+          ]
+        },
+        {
+          "name": "tony@collections.me",
+          "size": 1,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 1
+            },
+            {
+              "name": "Ownership",
+              "value": 0.0001921012068716955
+            }
+          ]
+        },
+        {
+          "name": "tonyx.ca@gmail.com",
+          "size": 6,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 6
+            },
+            {
+              "name": "Ownership",
+              "value": 0.18953460723958404
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Analytics.podspec",
+      "heat": 9.57707488482112,
+      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+      "info": [
+        {
+          "name": "Path",
+          "value": "Analytics.podspec"
+        },
+        {
+          "name": "Freshness",
+          "value": 9.57707488482112
+        },
+        {
+          "name": "Line Count",
+          "value": 27
+        },
+        {
+          "name": "Contributors",
+          "value": 4
+        }
+      ],
+      "children": [
+        {
+          "name": "f2prateek@gmail.com",
+          "size": 19,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 19
+            },
+            {
+              "name": "Ownership",
+              "value": 0.16823342007869094
+            }
+          ]
+        },
+        {
+          "name": "brandon@redf.net",
+          "size": 1,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 1
+            },
+            {
+              "name": "Ownership",
+              "value": 2.528991035900876
+            }
+          ]
+        },
+        {
+          "name": "skydivedan@users.noreply.github.com",
+          "size": 2,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 2
+            },
+            {
+              "name": "Ownership",
+              "value": 6.548636367659559
+            }
+          ]
+        },
+        {
+          "name": "tonyx.ca@gmail.com",
+          "size": 5,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 5
+            },
+            {
+              "name": "Ownership",
+              "value": 0.33121406118199953
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Analytics.xcodeproj",
+      "heat": 1.881189470859659,
+      "info": [
+        {
+          "name": "File Count",
+          "value": 3
+        },
+        {
+          "name": "Freshness",
+          "value": 1.881189470859659
+        }
+      ],
+      "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+      "children": [
+        {
+          "name": "project.pbxproj",
+          "heat": 2.126159438115414,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": "Analytics.xcodeproj/project.pbxproj"
+            },
+            {
+              "name": "Freshness",
+              "value": 2.126159438115414
+            },
+            {
+              "name": "Line Count",
+              "value": 855
+            },
+            {
+              "name": "Contributors",
+              "value": 8
+            }
+          ],
+          "children": [
+            {
+              "name": "tonyx.ca@gmail.com",
+              "size": 806,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 806
+                },
+                {
+                  "name": "Ownership",
+                  "value": 1.118204145603848
+                }
+              ]
+            },
+            {
+              "name": "f2prateek@gmail.com",
+              "size": 24,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 24
+                },
+                {
+                  "name": "Ownership",
+                  "value": 0.13848435791434077
+                }
+              ]
+            },
+            {
+              "name": "brandon@redf.net",
+              "size": 5,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 5
+                },
+                {
+                  "name": "Ownership",
+                  "value": 0.6624048588267598
+                }
+              ]
+            },
+            {
+              "name": "david.fink@ottoradio.com",
+              "size": 4,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 4
+                },
+                {
+                  "name": "Ownership",
+                  "value": 0.02024632945990566
+                }
+              ]
+            },
+            {
+              "name": "danieljackins@gmail.com",
+              "size": 2,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 2
+                },
+                {
+                  "name": "Ownership",
+                  "value": 0.15518879480978734
+                }
+              ]
+            },
+            {
+              "name": "dwayne@intivoto.com",
+              "size": 4,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 4
+                },
+                {
+                  "name": "Ownership",
+                  "value": 0.015221854578746578
+                }
+              ]
+            },
+            {
+              "name": "benshan@gmail.com",
+              "size": 2,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 2
+                },
+                {
+                  "name": "Ownership",
+                  "value": 0.005890181437941704
+                }
+              ]
+            },
+            {
+              "name": "ostafi_ion@yahoo.com",
+              "size": 8,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 8
+                },
+                {
+                  "name": "Ownership",
+                  "value": 0.010518915484054628
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "project.xcworkspace",
+          "heat": 1.0740294410243094,
+          "info": [
+            {
+              "name": "File Count",
+              "value": 1
+            },
+            {
+              "name": "Freshness",
+              "value": 1.0740294410243094
+            }
+          ],
+          "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+          "children": [
+            {
+              "name": "contents.xcworkspacedata",
+              "heat": 1.0740294410243094,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Path",
+                  "value": "Analytics.xcodeproj/project.xcworkspace/contents.xcworkspacedata"
+                },
+                {
+                  "name": "Freshness",
+                  "value": 1.0740294410243094
+                },
+                {
+                  "name": "Line Count",
+                  "value": 7
+                },
+                {
+                  "name": "Contributors",
+                  "value": 1
+                }
+              ],
+              "children": [
+                {
+                  "name": "tonyx.ca@gmail.com",
+                  "size": 7,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Lines Contributed",
+                      "value": 7
+                    },
+                    {
+                      "name": "Ownership",
+                      "value": 1.0740294410243096
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "xcshareddata",
+          "heat": 2.4433795334392543,
+          "info": [
+            {
+              "name": "File Count",
+              "value": 1
+            },
+            {
+              "name": "Freshness",
+              "value": 2.4433795334392543
+            }
+          ],
+          "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+          "children": [
+            {
+              "name": "xcschemes",
+              "heat": 2.4433795334392543,
+              "info": [
+                {
+                  "name": "File Count",
+                  "value": 2
+                },
+                {
+                  "name": "Freshness",
+                  "value": 2.4433795334392543
+                }
+              ],
+              "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+              "children": [
+                {
+                  "name": "Analytics.xcscheme",
+                  "heat": 1.1254405093329864,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Analytics.xcodeproj/xcshareddata/xcschemes/Analytics.xcscheme"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.1254405093329864
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 96
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 1
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 96,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 96
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 1.1254405093329876
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "AnalyticsTests.xcscheme",
+                  "heat": 3.761318557545522,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Analytics.xcodeproj/xcshareddata/xcschemes/AnalyticsTests.xcscheme"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 3.761318557545522
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 73
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 2
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 58,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 58
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.9203053620438733
+                        }
+                      ]
+                    },
+                    {
+                      "name": "fathy.boundjadj@gmail.com",
+                      "size": 15,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 15
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 2.841013195501639
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Analytics.xcworkspace",
+      "heat": 6.017683439304163,
+      "info": [
+        {
+          "name": "File Count",
+          "value": 2
+        },
+        {
+          "name": "Freshness",
+          "value": 6.017683439304163
+        }
+      ],
+      "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+      "children": [
+        {
+          "name": "contents.xcworkspacedata",
+          "heat": 1.0740294410243094,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": "Analytics.xcworkspace/contents.xcworkspacedata"
+            },
+            {
+              "name": "Freshness",
+              "value": 1.0740294410243094
+            },
+            {
+              "name": "Line Count",
+              "value": 10
+            },
+            {
+              "name": "Contributors",
+              "value": 1
+            }
+          ],
+          "children": [
+            {
+              "name": "tonyx.ca@gmail.com",
+              "size": 10,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 10
+                },
+                {
+                  "name": "Ownership",
+                  "value": 1.0740294410243096
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "xcshareddata",
+          "heat": 10.961337437584016,
+          "info": [
+            {
+              "name": "File Count",
+              "value": 1
+            },
+            {
+              "name": "Freshness",
+              "value": 10.961337437584016
+            }
+          ],
+          "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+          "children": [
+            {
+              "name": "IDEWorkspaceChecks.plist",
+              "heat": 10.961337437584016,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Path",
+                  "value": "Analytics.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist"
+                },
+                {
+                  "name": "Freshness",
+                  "value": 10.961337437584016
+                },
+                {
+                  "name": "Line Count",
+                  "value": 8
+                },
+                {
+                  "name": "Contributors",
+                  "value": 1
+                }
+              ],
+              "children": [
+                {
+                  "name": "f2prateek@gmail.com",
+                  "size": 8,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Lines Contributed",
+                      "value": 8
+                    },
+                    {
+                      "name": "Ownership",
+                      "value": 10.961337437584017
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AnalyticsTests",
+      "heat": 10.34628953008378,
+      "info": [
+        {
+          "name": "File Count",
+          "value": 16
+        },
+        {
+          "name": "Freshness",
+          "value": 10.34628953008378
+        }
+      ],
+      "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+      "children": [
+        {
+          "name": "AnalyticsTests-Bridging-Header.h",
+          "heat": 2.592686646915345,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": "AnalyticsTests/AnalyticsTests-Bridging-Header.h"
+            },
+            {
+              "name": "Freshness",
+              "value": 2.592686646915345
+            },
+            {
+              "name": "Line Count",
+              "value": 18
+            },
+            {
+              "name": "Contributors",
+              "value": 3
+            }
+          ],
+          "children": [
+            {
+              "name": "tonyx.ca@gmail.com",
+              "size": 16,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 16
+                },
+                {
+                  "name": "Ownership",
+                  "value": 1.0635854102767397
+                }
+              ]
+            },
+            {
+              "name": "david.fink@ottoradio.com",
+              "size": 1,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 1
+                },
+                {
+                  "name": "Ownership",
+                  "value": 0.2404251623363797
+                }
+              ]
+            },
+            {
+              "name": "fathy.boundjadj@gmail.com",
+              "size": 1,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 1
+                },
+                {
+                  "name": "Ownership",
+                  "value": 1.2886760743022252
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AnalyticsTests.swift",
+          "heat": 8.50071168576351,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": "AnalyticsTests/AnalyticsTests.swift"
+            },
+            {
+              "name": "Freshness",
+              "value": 8.50071168576351
+            },
+            {
+              "name": "Line Count",
+              "value": 206
+            },
+            {
+              "name": "Contributors",
+              "value": 7
+            }
+          ],
+          "children": [
+            {
+              "name": "tonyx.ca@gmail.com",
+              "size": 96,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 96
+                },
+                {
+                  "name": "Ownership",
+                  "value": 0.610077488576098
+                }
+              ]
+            },
+            {
+              "name": "benshan@gmail.com",
+              "size": 26,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 26
+                },
+                {
+                  "name": "Ownership",
+                  "value": 0.34230138589128983
+                }
+              ]
+            },
+            {
+              "name": "fathy.boundjadj@gmail.com",
+              "size": 69,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 69
+                },
+                {
+                  "name": "Ownership",
+                  "value": 5.654477692172732
+                }
+              ]
+            },
+            {
+              "name": "47793370+ujjawalgarg@users.noreply.github.com",
+              "size": 1,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 1
+                },
+                {
+                  "name": "Ownership",
+                  "value": 0.42916712816130687
+                }
+              ]
+            },
+            {
+              "name": "f2prateek@gmail.com",
+              "size": 3,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 3
+                },
+                {
+                  "name": "Ownership",
+                  "value": 0.06888229887182741
+                }
+              ]
+            },
+            {
+              "name": "aleksander.grzyb@gmail.com",
+              "size": 7,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 7
+                },
+                {
+                  "name": "Ownership",
+                  "value": 0.08025593017594763
+                }
+              ]
+            },
+            {
+              "name": "me@carlos.dev",
+              "size": 4,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 4
+                },
+                {
+                  "name": "Ownership",
+                  "value": 1.3155497619143088
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AnalyticsUtilTests.swift",
+          "heat": 12.984223378781081,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": "AnalyticsTests/AnalyticsUtilTests.swift"
+            },
+            {
+              "name": "Freshness",
+              "value": 12.984223378781081
+            },
+            {
+              "name": "Line Count",
+              "value": 115
+            },
+            {
+              "name": "Contributors",
+              "value": 3
+            }
+          ],
+          "children": [
+            {
+              "name": "david.fink@ottoradio.com",
+              "size": 39,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 39
+                },
+                {
+                  "name": "Ownership",
+                  "value": 1.467638817044683
+                }
+              ]
+            },
+            {
+              "name": "f2prateek@gmail.com",
+              "size": 27,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 27
+                },
+                {
+                  "name": "Ownership",
+                  "value": 1.6329993657836983
+                }
+              ]
+            },
+            {
+              "name": "fathy.boundjadj@gmail.com",
+              "size": 49,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 49
+                },
+                {
+                  "name": "Ownership",
+                  "value": 9.883585195952726
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ContextTest.swift",
+          "heat": 1.0662008974014598,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": "AnalyticsTests/ContextTest.swift"
+            },
+            {
+              "name": "Freshness",
+              "value": 1.0662008974014598
+            },
+            {
+              "name": "Line Count",
+              "value": 87
+            },
+            {
+              "name": "Contributors",
+              "value": 1
+            }
+          ],
+          "children": [
+            {
+              "name": "tonyx.ca@gmail.com",
+              "size": 87,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 87
+                },
+                {
+                  "name": "Ownership",
+                  "value": 1.0662008974014607
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CryptoTest.swift",
+          "heat": 1.0740294410243088,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": "AnalyticsTests/CryptoTest.swift"
+            },
+            {
+              "name": "Freshness",
+              "value": 1.0740294410243088
+            },
+            {
+              "name": "Line Count",
+              "value": 61
+            },
+            {
+              "name": "Contributors",
+              "value": 1
+            }
+          ],
+          "children": [
+            {
+              "name": "tonyx.ca@gmail.com",
+              "size": 61,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 61
+                },
+                {
+                  "name": "Ownership",
+                  "value": 1.0740294410243085
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "EndToEndTests.swift",
+          "heat": 8.355576766962784,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": "AnalyticsTests/EndToEndTests.swift"
+            },
+            {
+              "name": "Freshness",
+              "value": 8.355576766962784
+            },
+            {
+              "name": "Line Count",
+              "value": 80
+            },
+            {
+              "name": "Contributors",
+              "value": 2
+            }
+          ],
+          "children": [
+            {
+              "name": "f2prateek@gmail.com",
+              "size": 68,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 68
+                },
+                {
+                  "name": "Ownership",
+                  "value": 6.135357328388658
+                }
+              ]
+            },
+            {
+              "name": "fathy.boundjadj@gmail.com",
+              "size": 12,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 12
+                },
+                {
+                  "name": "Ownership",
+                  "value": 2.220219438574145
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "FileStorageTest.swift",
+          "heat": 1.0740294410243065,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": "AnalyticsTests/FileStorageTest.swift"
+            },
+            {
+              "name": "Freshness",
+              "value": 1.0740294410243065
+            },
+            {
+              "name": "Line Count",
+              "value": 125
+            },
+            {
+              "name": "Contributors",
+              "value": 1
+            }
+          ],
+          "children": [
+            {
+              "name": "tonyx.ca@gmail.com",
+              "size": 125,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 125
+                },
+                {
+                  "name": "Ownership",
+                  "value": 1.074029441024309
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HTTPClientTest.swift",
+          "heat": 2.0440235951934707,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": "AnalyticsTests/HTTPClientTest.swift"
+            },
+            {
+              "name": "Freshness",
+              "value": 2.0440235951934707
+            },
+            {
+              "name": "Line Count",
+              "value": 253
+            },
+            {
+              "name": "Contributors",
+              "value": 2
+            }
+          ],
+          "children": [
+            {
+              "name": "tonyx.ca@gmail.com",
+              "size": 226,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 226
+                },
+                {
+                  "name": "Ownership",
+                  "value": 0.9786494127287776
+                }
+              ]
+            },
+            {
+              "name": "f2prateek@gmail.com",
+              "size": 27,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 27
+                },
+                {
+                  "name": "Ownership",
+                  "value": 1.0653741824647023
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Info.plist",
+          "heat": 1.0740294410243099,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": "AnalyticsTests/Info.plist"
+            },
+            {
+              "name": "Freshness",
+              "value": 1.0740294410243099
+            },
+            {
+              "name": "Line Count",
+              "value": 22
+            },
+            {
+              "name": "Contributors",
+              "value": 1
+            }
+          ],
+          "children": [
+            {
+              "name": "tonyx.ca@gmail.com",
+              "size": 22,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 22
+                },
+                {
+                  "name": "Ownership",
+                  "value": 1.0740294410243092
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "IntegrationsManagerTest.swift",
+          "heat": 4.6756633005576305,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": "AnalyticsTests/IntegrationsManagerTest.swift"
+            },
+            {
+              "name": "Freshness",
+              "value": 4.6756633005576305
+            },
+            {
+              "name": "Line Count",
+              "value": 58
+            },
+            {
+              "name": "Contributors",
+              "value": 1
+            }
+          ],
+          "children": [
+            {
+              "name": "f2prateek@gmail.com",
+              "size": 58,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 58
+                },
+                {
+                  "name": "Ownership",
+                  "value": 4.675663300557637
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MiddlewareTests.swift",
+          "heat": 1.288252379154553,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": "AnalyticsTests/MiddlewareTests.swift"
+            },
+            {
+              "name": "Freshness",
+              "value": 1.288252379154553
+            },
+            {
+              "name": "Line Count",
+              "value": 82
+            },
+            {
+              "name": "Contributors",
+              "value": 1
+            }
+          ],
+          "children": [
+            {
+              "name": "tonyx.ca@gmail.com",
+              "size": 82,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 82
+                },
+                {
+                  "name": "Ownership",
+                  "value": 1.2882523791545555
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "SerializationTests.m",
+          "heat": 113.27123085937599,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": "AnalyticsTests/SerializationTests.m"
+            },
+            {
+              "name": "Freshness",
+              "value": 113.27123085937599
+            },
+            {
+              "name": "Line Count",
+              "value": 55
+            },
+            {
+              "name": "Contributors",
+              "value": 1
+            }
+          ],
+          "children": [
+            {
+              "name": "brandon@redf.net",
+              "size": 55,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 55
+                },
+                {
+                  "name": "Ownership",
+                  "value": 113.27123085937608
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "StoreKitTrackerTests.swift",
+          "heat": 1.920240326815514,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": "AnalyticsTests/StoreKitTrackerTests.swift"
+            },
+            {
+              "name": "Freshness",
+              "value": 1.920240326815514
+            },
+            {
+              "name": "Line Count",
+              "value": 71
+            },
+            {
+              "name": "Contributors",
+              "value": 1
+            }
+          ],
+          "children": [
+            {
+              "name": "tonyx.ca@gmail.com",
+              "size": 71,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 71
+                },
+                {
+                  "name": "Ownership",
+                  "value": 1.920240326815516
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TrackingTests.swift",
+          "heat": 3.079616215327265,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": "AnalyticsTests/TrackingTests.swift"
+            },
+            {
+              "name": "Freshness",
+              "value": 3.079616215327265
+            },
+            {
+              "name": "Line Count",
+              "value": 94
+            },
+            {
+              "name": "Contributors",
+              "value": 2
+            }
+          ],
+          "children": [
+            {
+              "name": "tonyx.ca@gmail.com",
+              "size": 89,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 89
+                },
+                {
+                  "name": "Ownership",
+                  "value": 1.7700951376170557
+                }
+              ]
+            },
+            {
+              "name": "f2prateek@gmail.com",
+              "size": 5,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 5
+                },
+                {
+                  "name": "Ownership",
+                  "value": 1.3095210777102153
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "UserDefaultsStorageTest.swift",
+          "heat": 1.0740294410243072,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Path",
+              "value": "AnalyticsTests/UserDefaultsStorageTest.swift"
+            },
+            {
+              "name": "Freshness",
+              "value": 1.0740294410243072
+            },
+            {
+              "name": "Line Count",
+              "value": 103
+            },
+            {
+              "name": "Contributors",
+              "value": 1
+            }
+          ],
+          "children": [
+            {
+              "name": "tonyx.ca@gmail.com",
+              "size": 103,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Lines Contributed",
+                  "value": 103
+                },
+                {
+                  "name": "Ownership",
+                  "value": 1.0740294410243083
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Utils",
+          "heat": 1.4660886649946647,
+          "info": [
+            {
+              "name": "File Count",
+              "value": 3
+            },
+            {
+              "name": "Freshness",
+              "value": 1.4660886649946647
+            }
+          ],
+          "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+          "children": [
+            {
+              "name": "NSData+SEGGUNZIPP.h",
+              "heat": 1.0740294410243099,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Path",
+                  "value": "AnalyticsTests/Utils/NSData+SEGGUNZIPP.h"
+                },
+                {
+                  "name": "Freshness",
+                  "value": 1.0740294410243099
+                },
+                {
+                  "name": "Line Count",
+                  "value": 17
+                },
+                {
+                  "name": "Contributors",
+                  "value": 1
+                }
+              ],
+              "children": [
+                {
+                  "name": "tonyx.ca@gmail.com",
+                  "size": 17,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Lines Contributed",
+                      "value": 17
+                    },
+                    {
+                      "name": "Ownership",
+                      "value": 1.0740294410243096
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "NSData+SEGGUNZIPP.m",
+              "heat": 1.0740294410243088,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Path",
+                  "value": "AnalyticsTests/Utils/NSData+SEGGUNZIPP.m"
+                },
+                {
+                  "name": "Freshness",
+                  "value": 1.0740294410243088
+                },
+                {
+                  "name": "Line Count",
+                  "value": 61
+                },
+                {
+                  "name": "Contributors",
+                  "value": 1
+                }
+              ],
+              "children": [
+                {
+                  "name": "tonyx.ca@gmail.com",
+                  "size": 61,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Lines Contributed",
+                      "value": 61
+                    },
+                    {
+                      "name": "Ownership",
+                      "value": 1.0740294410243085
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "TestUtils.swift",
+              "heat": 2.250207112935376,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Path",
+                  "value": "AnalyticsTests/Utils/TestUtils.swift"
+                },
+                {
+                  "name": "Freshness",
+                  "value": 2.250207112935376
+                },
+                {
+                  "name": "Line Count",
+                  "value": 183
+                },
+                {
+                  "name": "Contributors",
+                  "value": 4
+                }
+              ],
+              "children": [
+                {
+                  "name": "tonyx.ca@gmail.com",
+                  "size": 142,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Lines Contributed",
+                      "value": 142
+                    },
+                    {
+                      "name": "Ownership",
+                      "value": 0.8962778334491336
+                    }
+                  ]
+                },
+                {
+                  "name": "aleksander.grzyb@gmail.com",
+                  "size": 3,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Lines Contributed",
+                      "value": 3
+                    },
+                    {
+                      "name": "Ownership",
+                      "value": 0.03871831760244781
+                    }
+                  ]
+                },
+                {
+                  "name": "fathy.boundjadj@gmail.com",
+                  "size": 12,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Lines Contributed",
+                      "value": 12
+                    },
+                    {
+                      "name": "Ownership",
+                      "value": 0.9532138183372871
+                    }
+                  ]
+                },
+                {
+                  "name": "benshan@gmail.com",
+                  "size": 26,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Lines Contributed",
+                      "value": 26
+                    },
+                    {
+                      "name": "Ownership",
+                      "value": 0.3619971435465128
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CHANGELOG.md",
+      "heat": 5.198354427347165,
+      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+      "info": [
+        {
+          "name": "Path",
+          "value": "CHANGELOG.md"
+        },
+        {
+          "name": "Freshness",
+          "value": 5.198354427347165
+        },
+        {
+          "name": "Line Count",
+          "value": 439
+        },
+        {
+          "name": "Contributors",
+          "value": 7
+        }
+      ],
+      "children": [
+        {
+          "name": "f2prateek@gmail.com",
+          "size": 307,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 307
+            },
+            {
+              "name": "Ownership",
+              "value": 1.3566478585350863
+            }
+          ]
+        },
+        {
+          "name": "brandon@redf.net",
+          "size": 12,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 12
+            },
+            {
+              "name": "Ownership",
+              "value": 1.8664461533425114
+            }
+          ]
+        },
+        {
+          "name": "fathy.boundjadj@gmail.com",
+          "size": 34,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 34
+            },
+            {
+              "name": "Ownership",
+              "value": 1.6147663663791152
+            }
+          ]
+        },
+        {
+          "name": "tonyx.ca@gmail.com",
+          "size": 67,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 67
+            },
+            {
+              "name": "Ownership",
+              "value": 0.3234286459115277
+            }
+          ]
+        },
+        {
+          "name": "ladannasserian@gmail.com",
+          "size": 8,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 8
+            },
+            {
+              "name": "Ownership",
+              "value": 0.01873294564926859
+            }
+          ]
+        },
+        {
+          "name": "teresa.nesteby@gmail.com",
+          "size": 2,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 2
+            },
+            {
+              "name": "Ownership",
+              "value": 0.008111477451858902
+            }
+          ]
+        },
+        {
+          "name": "williamcouperjohnson@gmail.com",
+          "size": 9,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 9
+            },
+            {
+              "name": "Ownership",
+              "value": 0.01022098007776944
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CONTRIBUTING.md",
+      "heat": 0.43056644747871703,
+      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+      "info": [
+        {
+          "name": "Path",
+          "value": "CONTRIBUTING.md"
+        },
+        {
+          "name": "Freshness",
+          "value": 0.43056644747871703
+        },
+        {
+          "name": "Line Count",
+          "value": 17
+        },
+        {
+          "name": "Contributors",
+          "value": 1
+        }
+      ],
+      "children": [
+        {
+          "name": "f2prateek@gmail.com",
+          "size": 17,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 17
+            },
+            {
+              "name": "Ownership",
+              "value": 0.430566447478717
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Examples",
+      "heat": 7.0189101316334535,
+      "info": [
+        {
+          "name": "File Count",
+          "value": 3
+        },
+        {
+          "name": "Freshness",
+          "value": 7.0189101316334535
+        }
+      ],
+      "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+      "children": [
+        {
+          "name": "CarthageExample",
+          "heat": 17.645936468187557,
+          "info": [
+            {
+              "name": "File Count",
+              "value": 5
+            },
+            {
+              "name": "Freshness",
+              "value": 17.645936468187557
+            }
+          ],
+          "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+          "children": [
+            {
+              "name": "Cartfile",
+              "heat": 24.210286620527416,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Path",
+                  "value": "Examples/CarthageExample/Cartfile"
+                },
+                {
+                  "name": "Freshness",
+                  "value": 24.210286620527416
+                },
+                {
+                  "name": "Line Count",
+                  "value": 3
+                },
+                {
+                  "name": "Contributors",
+                  "value": 2
+                }
+              ],
+              "children": [
+                {
+                  "name": "brandon@redf.net",
+                  "size": 1,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Lines Contributed",
+                      "value": 1
+                    },
+                    {
+                      "name": "Ownership",
+                      "value": 22.760919323107885
+                    }
+                  ]
+                },
+                {
+                  "name": "tonyx.ca@gmail.com",
+                  "size": 2,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Lines Contributed",
+                      "value": 2
+                    },
+                    {
+                      "name": "Ownership",
+                      "value": 1.449367297419532
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Cartfile.resolved",
+              "heat": 58.573619854850236,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Path",
+                  "value": "Examples/CarthageExample/Cartfile.resolved"
+                },
+                {
+                  "name": "Freshness",
+                  "value": 58.573619854850236
+                },
+                {
+                  "name": "Line Count",
+                  "value": 1
+                },
+                {
+                  "name": "Contributors",
+                  "value": 1
+                }
+              ],
+              "children": [
+                {
+                  "name": "f2prateek@gmail.com",
+                  "size": 1,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Lines Contributed",
+                      "value": 1
+                    },
+                    {
+                      "name": "Ownership",
+                      "value": 58.573619854850236
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "CarthageExample.xcodeproj",
+              "heat": 1.0898273290044709,
+              "info": [
+                {
+                  "name": "File Count",
+                  "value": 2
+                },
+                {
+                  "name": "Freshness",
+                  "value": 1.0898273290044709
+                }
+              ],
+              "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+              "children": [
+                {
+                  "name": "project.pbxproj",
+                  "heat": 1.1041339134704085,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/CarthageExample/CarthageExample.xcodeproj/project.pbxproj"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.1041339134704085
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 337
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 1
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 337,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 337
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 1.1041339134704065
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "project.xcworkspace",
+                  "heat": 1.075520744538533,
+                  "info": [
+                    {
+                      "name": "File Count",
+                      "value": 1
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.075520744538533
+                    }
+                  ],
+                  "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+                  "children": [
+                    {
+                      "name": "contents.xcworkspacedata",
+                      "heat": 1.075520744538533,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Path",
+                          "value": "Examples/CarthageExample/CarthageExample.xcodeproj/project.xcworkspace/contents.xcworkspacedata"
+                        },
+                        {
+                          "name": "Freshness",
+                          "value": 1.075520744538533
+                        },
+                        {
+                          "name": "Line Count",
+                          "value": 7
+                        },
+                        {
+                          "name": "Contributors",
+                          "value": 1
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "tonyx.ca@gmail.com",
+                          "size": 7,
+                          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                          "info": [
+                            {
+                              "name": "Lines Contributed",
+                              "value": 7
+                            },
+                            {
+                              "name": "Ownership",
+                              "value": 1.075520744538533
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "CarthageExample",
+              "heat": 1.0833673888356103,
+              "info": [
+                {
+                  "name": "File Count",
+                  "value": 5
+                },
+                {
+                  "name": "Freshness",
+                  "value": 1.0833673888356103
+                }
+              ],
+              "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+              "children": [
+                {
+                  "name": "AppDelegate.swift",
+                  "heat": 1.1147539660239185,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/CarthageExample/CarthageExample/AppDelegate.swift"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.1147539660239185
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 56
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 1
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 56,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 56
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 1.1147539660239192
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Assets.xcassets",
+                  "heat": 1.075520744538533,
+                  "info": [
+                    {
+                      "name": "File Count",
+                      "value": 1
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.075520744538533
+                    }
+                  ],
+                  "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+                  "children": [
+                    {
+                      "name": "AppIcon.appiconset",
+                      "heat": 1.075520744538533,
+                      "info": [
+                        {
+                          "name": "File Count",
+                          "value": 1
+                        },
+                        {
+                          "name": "Freshness",
+                          "value": 1.075520744538533
+                        }
+                      ],
+                      "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+                      "children": [
+                        {
+                          "name": "Contents.json",
+                          "heat": 1.075520744538533,
+                          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                          "info": [
+                            {
+                              "name": "Path",
+                              "value": "Examples/CarthageExample/CarthageExample/Assets.xcassets/AppIcon.appiconset/Contents.json"
+                            },
+                            {
+                              "name": "Freshness",
+                              "value": 1.075520744538533
+                            },
+                            {
+                              "name": "Line Count",
+                              "value": 38
+                            },
+                            {
+                              "name": "Contributors",
+                              "value": 1
+                            }
+                          ],
+                          "children": [
+                            {
+                              "name": "tonyx.ca@gmail.com",
+                              "size": 38,
+                              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                              "info": [
+                                {
+                                  "name": "Lines Contributed",
+                                  "value": 38
+                                },
+                                {
+                                  "name": "Ownership",
+                                  "value": 1.0755207445385337
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Base.lproj",
+                  "heat": 1.075520744538533,
+                  "info": [
+                    {
+                      "name": "File Count",
+                      "value": 2
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.075520744538533
+                    }
+                  ],
+                  "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+                  "children": [
+                    {
+                      "name": "LaunchScreen.storyboard",
+                      "heat": 1.075520744538533,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Path",
+                          "value": "Examples/CarthageExample/CarthageExample/Base.lproj/LaunchScreen.storyboard"
+                        },
+                        {
+                          "name": "Freshness",
+                          "value": 1.075520744538533
+                        },
+                        {
+                          "name": "Line Count",
+                          "value": 27
+                        },
+                        {
+                          "name": "Contributors",
+                          "value": 1
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "tonyx.ca@gmail.com",
+                          "size": 27,
+                          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                          "info": [
+                            {
+                              "name": "Lines Contributed",
+                              "value": 27
+                            },
+                            {
+                              "name": "Ownership",
+                              "value": 1.075520744538533
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Main.storyboard",
+                      "heat": 1.075520744538533,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Path",
+                          "value": "Examples/CarthageExample/CarthageExample/Base.lproj/Main.storyboard"
+                        },
+                        {
+                          "name": "Freshness",
+                          "value": 1.075520744538533
+                        },
+                        {
+                          "name": "Line Count",
+                          "value": 39
+                        },
+                        {
+                          "name": "Contributors",
+                          "value": 1
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "tonyx.ca@gmail.com",
+                          "size": 39,
+                          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                          "info": [
+                            {
+                              "name": "Lines Contributed",
+                              "value": 39
+                            },
+                            {
+                              "name": "Ownership",
+                              "value": 1.0755207445385337
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Info.plist",
+                  "heat": 1.075520744538533,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/CarthageExample/CarthageExample/Info.plist"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.075520744538533
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 40
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 1
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 40,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 40
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 1.0755207445385337
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ViewController.swift",
+                  "heat": 1.0755207445385329,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/CarthageExample/CarthageExample/ViewController.swift"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.0755207445385329
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 31
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 1
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 31,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 31
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 1.0755207445385329
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Makefile",
+              "heat": 3.272581147720063,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Path",
+                  "value": "Examples/CarthageExample/Makefile"
+                },
+                {
+                  "name": "Freshness",
+                  "value": 3.272581147720063
+                },
+                {
+                  "name": "Line Count",
+                  "value": 7
+                },
+                {
+                  "name": "Contributors",
+                  "value": 1
+                }
+              ],
+              "children": [
+                {
+                  "name": "tonyx.ca@gmail.com",
+                  "size": 7,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Lines Contributed",
+                      "value": 7
+                    },
+                    {
+                      "name": "Ownership",
+                      "value": 3.2725811477200617
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CocoapodsExample",
+          "heat": 2.1933961760893745,
+          "info": [
+            {
+              "name": "File Count",
+              "value": 5
+            },
+            {
+              "name": "Freshness",
+              "value": 2.1933961760893745
+            }
+          ],
+          "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+          "children": [
+            {
+              "name": "CocoapodsExample.xcodeproj",
+              "heat": 0.630446153399161,
+              "info": [
+                {
+                  "name": "File Count",
+                  "value": 2
+                },
+                {
+                  "name": "Freshness",
+                  "value": 0.630446153399161
+                }
+              ],
+              "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+              "children": [
+                {
+                  "name": "project.pbxproj",
+                  "heat": 0.9356462887013357,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/CocoapodsExample/CocoapodsExample.xcodeproj/project.pbxproj"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 0.9356462887013357
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 412
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 2
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "f2prateek@gmail.com",
+                      "size": 178,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 178
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.150922590056859
+                        }
+                      ]
+                    },
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 234,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 234
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.7847236986444809
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "project.xcworkspace",
+                  "heat": 0.32524601809698617,
+                  "info": [
+                    {
+                      "name": "File Count",
+                      "value": 1
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 0.32524601809698617
+                    }
+                  ],
+                  "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+                  "children": [
+                    {
+                      "name": "contents.xcworkspacedata",
+                      "heat": 0.32524601809698617,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Path",
+                          "value": "Examples/CocoapodsExample/CocoapodsExample.xcodeproj/project.xcworkspace/contents.xcworkspacedata"
+                        },
+                        {
+                          "name": "Freshness",
+                          "value": 0.32524601809698617
+                        },
+                        {
+                          "name": "Line Count",
+                          "value": 7
+                        },
+                        {
+                          "name": "Contributors",
+                          "value": 2
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "f2prateek@gmail.com",
+                          "size": 6,
+                          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                          "info": [
+                            {
+                              "name": "Lines Contributed",
+                              "value": 6
+                            },
+                            {
+                              "name": "Ownership",
+                              "value": 0.1715963257690463
+                            }
+                          ]
+                        },
+                        {
+                          "name": "tonyx.ca@gmail.com",
+                          "size": 1,
+                          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                          "info": [
+                            {
+                              "name": "Lines Contributed",
+                              "value": 1
+                            },
+                            {
+                              "name": "Ownership",
+                              "value": 0.15364969232793985
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "CocoapodsExample.xcworkspace",
+              "heat": 5.624555106804748,
+              "info": [
+                {
+                  "name": "File Count",
+                  "value": 2
+                },
+                {
+                  "name": "Freshness",
+                  "value": 5.624555106804748
+                }
+              ],
+              "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+              "children": [
+                {
+                  "name": "contents.xcworkspacedata",
+                  "heat": 0.28777277602548,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/CocoapodsExample/CocoapodsExample.xcworkspace/contents.xcworkspacedata"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 0.28777277602548
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 10
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 2
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "f2prateek@gmail.com",
+                      "size": 9,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 9
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.18021799139592215
+                        }
+                      ]
+                    },
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 1,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 1
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.10755478462955789
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "xcshareddata",
+                  "heat": 10.961337437584016,
+                  "info": [
+                    {
+                      "name": "File Count",
+                      "value": 1
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 10.961337437584016
+                    }
+                  ],
+                  "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+                  "children": [
+                    {
+                      "name": "IDEWorkspaceChecks.plist",
+                      "heat": 10.961337437584016,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Path",
+                          "value": "Examples/CocoapodsExample/CocoapodsExample.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist"
+                        },
+                        {
+                          "name": "Freshness",
+                          "value": 10.961337437584016
+                        },
+                        {
+                          "name": "Line Count",
+                          "value": 8
+                        },
+                        {
+                          "name": "Contributors",
+                          "value": 1
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "f2prateek@gmail.com",
+                          "size": 8,
+                          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                          "info": [
+                            {
+                              "name": "Lines Contributed",
+                              "value": 8
+                            },
+                            {
+                              "name": "Ownership",
+                              "value": 10.961337437584017
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "CocoapodsExample",
+              "heat": 1.3757166813332158,
+              "info": [
+                {
+                  "name": "File Count",
+                  "value": 8
+                },
+                {
+                  "name": "Freshness",
+                  "value": 1.3757166813332158
+                }
+              ],
+              "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+              "children": [
+                {
+                  "name": "AppDelegate.h",
+                  "heat": 1.2427799597198397,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/CocoapodsExample/CocoapodsExample/AppDelegate.h"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.2427799597198397
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 17
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 2
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 16,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 16
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 1.012280325925251
+                        }
+                      ]
+                    },
+                    {
+                      "name": "f2prateek@gmail.com",
+                      "size": 1,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 1
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.23049963379458854
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "AppDelegate.m",
+                  "heat": 2.9690599673457325,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/CocoapodsExample/CocoapodsExample/AppDelegate.m"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 2.9690599673457325
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 72
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 2
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 50,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 50
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.8059936037532209
+                        }
+                      ]
+                    },
+                    {
+                      "name": "f2prateek@gmail.com",
+                      "size": 22,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 22
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 2.1630663635925083
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Assets.xcassets",
+                  "heat": 0.8015161453337699,
+                  "info": [
+                    {
+                      "name": "File Count",
+                      "value": 1
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 0.8015161453337699
+                    }
+                  ],
+                  "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+                  "children": [
+                    {
+                      "name": "AppIcon.appiconset",
+                      "heat": 0.8015161453337699,
+                      "info": [
+                        {
+                          "name": "File Count",
+                          "value": 1
+                        },
+                        {
+                          "name": "Freshness",
+                          "value": 0.8015161453337699
+                        }
+                      ],
+                      "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+                      "children": [
+                        {
+                          "name": "Contents.json",
+                          "heat": 0.8015161453337699,
+                          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                          "info": [
+                            {
+                              "name": "Path",
+                              "value": "Examples/CocoapodsExample/CocoapodsExample/Assets.xcassets/AppIcon.appiconset/Contents.json"
+                            },
+                            {
+                              "name": "Freshness",
+                              "value": 0.8015161453337699
+                            },
+                            {
+                              "name": "Line Count",
+                              "value": 48
+                            },
+                            {
+                              "name": "Contributors",
+                              "value": 2
+                            }
+                          ],
+                          "children": [
+                            {
+                              "name": "tonyx.ca@gmail.com",
+                              "size": 30,
+                              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                              "info": [
+                                {
+                                  "name": "Lines Contributed",
+                                  "value": 30
+                                },
+                                {
+                                  "name": "Ownership",
+                                  "value": 0.7264427528098119
+                                }
+                              ]
+                            },
+                            {
+                              "name": "f2prateek@gmail.com",
+                              "size": 18,
+                              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                              "info": [
+                                {
+                                  "name": "Lines Contributed",
+                                  "value": 18
+                                },
+                                {
+                                  "name": "Ownership",
+                                  "value": 0.07507339252395777
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Base.lproj",
+                  "heat": 1.0491855164464243,
+                  "info": [
+                    {
+                      "name": "File Count",
+                      "value": 2
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.0491855164464243
+                    }
+                  ],
+                  "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+                  "children": [
+                    {
+                      "name": "LaunchScreen.storyboard",
+                      "heat": 1.0431273969289732,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Path",
+                          "value": "Examples/CocoapodsExample/CocoapodsExample/Base.lproj/LaunchScreen.storyboard"
+                        },
+                        {
+                          "name": "Freshness",
+                          "value": 1.0431273969289732
+                        },
+                        {
+                          "name": "Line Count",
+                          "value": 27
+                        },
+                        {
+                          "name": "Contributors",
+                          "value": 2
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "tonyx.ca@gmail.com",
+                          "size": 26,
+                          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                          "info": [
+                            {
+                              "name": "Lines Contributed",
+                              "value": 26
+                            },
+                            {
+                              "name": "Ownership",
+                              "value": 1.035712740877224
+                            }
+                          ]
+                        },
+                        {
+                          "name": "f2prateek@gmail.com",
+                          "size": 1,
+                          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                          "info": [
+                            {
+                              "name": "Lines Contributed",
+                              "value": 1
+                            },
+                            {
+                              "name": "Ownership",
+                              "value": 0.007414656051748913
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Main.storyboard",
+                      "heat": 1.0552436359638753,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Path",
+                          "value": "Examples/CocoapodsExample/CocoapodsExample/Base.lproj/Main.storyboard"
+                        },
+                        {
+                          "name": "Freshness",
+                          "value": 1.0552436359638753
+                        },
+                        {
+                          "name": "Line Count",
+                          "value": 43
+                        },
+                        {
+                          "name": "Contributors",
+                          "value": 2
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "tonyx.ca@gmail.com",
+                          "size": 42,
+                          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                          "info": [
+                            {
+                              "name": "Lines Contributed",
+                              "value": 42
+                            },
+                            {
+                              "name": "Ownership",
+                              "value": 1.050587921698823
+                            }
+                          ]
+                        },
+                        {
+                          "name": "f2prateek@gmail.com",
+                          "size": 1,
+                          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                          "info": [
+                            {
+                              "name": "Lines Contributed",
+                              "value": 1
+                            },
+                            {
+                              "name": "Ownership",
+                              "value": 0.004655714265051643
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Info.plist",
+                  "heat": 0.6492061567658666,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/CocoapodsExample/CocoapodsExample/Info.plist"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 0.6492061567658666
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 51
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 2
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "f2prateek@gmail.com",
+                      "size": 33,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 33
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.13609793268345402
+                        }
+                      ]
+                    },
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 18,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 18
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.5131082240824119
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ViewController.h",
+                  "heat": 1.2650775748430745,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/CocoapodsExample/CocoapodsExample/ViewController.h"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.2650775748430745
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 15
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 2
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 14,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 14
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 1.0038446565425407
+                        }
+                      ]
+                    },
+                    {
+                      "name": "f2prateek@gmail.com",
+                      "size": 1,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 1
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.2612329183005337
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ViewController.m",
+                  "heat": 1.3215945220904564,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/CocoapodsExample/CocoapodsExample/ViewController.m"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.3215945220904564
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 47
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 2
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 20,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 20
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.43403337594778585
+                        }
+                      ]
+                    },
+                    {
+                      "name": "f2prateek@gmail.com",
+                      "size": 27,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 27
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.8875611461426707
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "main.m",
+                  "heat": 1.7073136081205622,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/CocoapodsExample/CocoapodsExample/main.m"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.7073136081205622
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 18
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 2
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 14,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 14
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.8365372137854505
+                        }
+                      ]
+                    },
+                    {
+                      "name": "f2prateek@gmail.com",
+                      "size": 4,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 4
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.8707763943351122
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Podfile",
+              "heat": 1.075547846295579,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Path",
+                  "value": "Examples/CocoapodsExample/Podfile"
+                },
+                {
+                  "name": "Freshness",
+                  "value": 1.075547846295579
+                },
+                {
+                  "name": "Line Count",
+                  "value": 7
+                },
+                {
+                  "name": "Contributors",
+                  "value": 1
+                }
+              ],
+              "children": [
+                {
+                  "name": "tonyx.ca@gmail.com",
+                  "size": 7,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Lines Contributed",
+                      "value": 7
+                    },
+                    {
+                      "name": "Ownership",
+                      "value": 1.075547846295579
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Podfile.lock",
+              "heat": 2.2607150926141686,
+              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+              "info": [
+                {
+                  "name": "Path",
+                  "value": "Examples/CocoapodsExample/Podfile.lock"
+                },
+                {
+                  "name": "Freshness",
+                  "value": 2.2607150926141686
+                },
+                {
+                  "name": "Line Count",
+                  "value": 16
+                },
+                {
+                  "name": "Contributors",
+                  "value": 2
+                }
+              ],
+              "children": [
+                {
+                  "name": "f2prateek@gmail.com",
+                  "size": 12,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Lines Contributed",
+                      "value": 12
+                    },
+                    {
+                      "name": "Ownership",
+                      "value": 1.7266792569172869
+                    }
+                  ]
+                },
+                {
+                  "name": "tonyx.ca@gmail.com",
+                  "size": 4,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Lines Contributed",
+                      "value": 4
+                    },
+                    {
+                      "name": "Ownership",
+                      "value": 0.534035835696882
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ManualExample",
+          "heat": 1.2173977506234275,
+          "info": [
+            {
+              "name": "File Count",
+              "value": 2
+            },
+            {
+              "name": "Freshness",
+              "value": 1.2173977506234275
+            }
+          ],
+          "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+          "children": [
+            {
+              "name": "ManualExample.xcodeproj",
+              "heat": 1.0755238387990902,
+              "info": [
+                {
+                  "name": "File Count",
+                  "value": 2
+                },
+                {
+                  "name": "Freshness",
+                  "value": 1.0755238387990902
+                }
+              ],
+              "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+              "children": [
+                {
+                  "name": "project.pbxproj",
+                  "heat": 1.0755238387990855,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/ManualExample/ManualExample.xcodeproj/project.pbxproj"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.0755238387990855
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 387
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 1
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 387,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 387
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 1.0755238387990893
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "project.xcworkspace",
+                  "heat": 1.0755238387990949,
+                  "info": [
+                    {
+                      "name": "File Count",
+                      "value": 1
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.0755238387990949
+                    }
+                  ],
+                  "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+                  "children": [
+                    {
+                      "name": "contents.xcworkspacedata",
+                      "heat": 1.0755238387990949,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Path",
+                          "value": "Examples/ManualExample/ManualExample.xcodeproj/project.xcworkspace/contents.xcworkspacedata"
+                        },
+                        {
+                          "name": "Freshness",
+                          "value": 1.0755238387990949
+                        },
+                        {
+                          "name": "Line Count",
+                          "value": 7
+                        },
+                        {
+                          "name": "Contributors",
+                          "value": 1
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "tonyx.ca@gmail.com",
+                          "size": 7,
+                          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                          "info": [
+                            {
+                              "name": "Lines Contributed",
+                              "value": 7
+                            },
+                            {
+                              "name": "Ownership",
+                              "value": 1.0755238387990949
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ManualExample",
+              "heat": 1.3592716624477645,
+              "info": [
+                {
+                  "name": "File Count",
+                  "value": 8
+                },
+                {
+                  "name": "Freshness",
+                  "value": 1.3592716624477645
+                }
+              ],
+              "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+              "children": [
+                {
+                  "name": "AppDelegate.h",
+                  "heat": 1.2427573644290304,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/ManualExample/ManualExample/AppDelegate.h"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.2427573644290304
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 17
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 2
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 16,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 16
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 1.0122577306344422
+                        }
+                      ]
+                    },
+                    {
+                      "name": "f2prateek@gmail.com",
+                      "size": 1,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 1
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.23049963379458854
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "AppDelegate.m",
+                  "heat": 1.7737971563416348,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/ManualExample/ManualExample/AppDelegate.m"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.7737971563416348
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 57
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 2
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 43,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 43
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.8113600889186153
+                        }
+                      ]
+                    },
+                    {
+                      "name": "f2prateek@gmail.com",
+                      "size": 14,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 14
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.9624370674230189
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Assets.xcassets",
+                  "heat": 1.0755238387990957,
+                  "info": [
+                    {
+                      "name": "File Count",
+                      "value": 1
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.0755238387990957
+                    }
+                  ],
+                  "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+                  "children": [
+                    {
+                      "name": "AppIcon.appiconset",
+                      "heat": 1.0755238387990957,
+                      "info": [
+                        {
+                          "name": "File Count",
+                          "value": 1
+                        },
+                        {
+                          "name": "Freshness",
+                          "value": 1.0755238387990957
+                        }
+                      ],
+                      "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+                      "children": [
+                        {
+                          "name": "Contents.json",
+                          "heat": 1.0755238387990957,
+                          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                          "info": [
+                            {
+                              "name": "Path",
+                              "value": "Examples/ManualExample/ManualExample/Assets.xcassets/AppIcon.appiconset/Contents.json"
+                            },
+                            {
+                              "name": "Freshness",
+                              "value": 1.0755238387990957
+                            },
+                            {
+                              "name": "Line Count",
+                              "value": 38
+                            },
+                            {
+                              "name": "Contributors",
+                              "value": 1
+                            }
+                          ],
+                          "children": [
+                            {
+                              "name": "tonyx.ca@gmail.com",
+                              "size": 38,
+                              "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                              "info": [
+                                {
+                                  "name": "Lines Contributed",
+                                  "value": 38
+                                },
+                                {
+                                  "name": "Ownership",
+                                  "value": 1.0755238387990949
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Base.lproj",
+                  "heat": 1.0755238387990955,
+                  "info": [
+                    {
+                      "name": "File Count",
+                      "value": 2
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.0755238387990955
+                    }
+                  ],
+                  "image": "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png",
+                  "children": [
+                    {
+                      "name": "LaunchScreen.storyboard",
+                      "heat": 1.075523838799095,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Path",
+                          "value": "Examples/ManualExample/ManualExample/Base.lproj/LaunchScreen.storyboard"
+                        },
+                        {
+                          "name": "Freshness",
+                          "value": 1.075523838799095
+                        },
+                        {
+                          "name": "Line Count",
+                          "value": 27
+                        },
+                        {
+                          "name": "Contributors",
+                          "value": 1
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "tonyx.ca@gmail.com",
+                          "size": 27,
+                          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                          "info": [
+                            {
+                              "name": "Lines Contributed",
+                              "value": 27
+                            },
+                            {
+                              "name": "Ownership",
+                              "value": 1.0755238387990955
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Main.storyboard",
+                      "heat": 1.0755238387990957,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Path",
+                          "value": "Examples/ManualExample/ManualExample/Base.lproj/Main.storyboard"
+                        },
+                        {
+                          "name": "Freshness",
+                          "value": 1.0755238387990957
+                        },
+                        {
+                          "name": "Line Count",
+                          "value": 39
+                        },
+                        {
+                          "name": "Contributors",
+                          "value": 1
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "tonyx.ca@gmail.com",
+                          "size": 39,
+                          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                          "info": [
+                            {
+                              "name": "Lines Contributed",
+                              "value": 39
+                            },
+                            {
+                              "name": "Ownership",
+                              "value": 1.0755238387990949
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Info.plist",
+                  "heat": 1.0755238387990957,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/ManualExample/ManualExample/Info.plist"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.0755238387990957
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 40
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 1
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 40,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 40
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 1.0755238387990949
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ViewController.h",
+                  "heat": 1.2650551678463553,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/ManualExample/ManualExample/ViewController.h"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.2650551678463553
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 15
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 2
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 14,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 14
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 1.0038222495458218
+                        }
+                      ]
+                    },
+                    {
+                      "name": "f2prateek@gmail.com",
+                      "size": 1,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 1
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.2612329183005337
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ViewController.m",
+                  "heat": 1.6586971589445125,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/ManualExample/ManualExample/ViewController.m"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.6586971589445125
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 39
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 2
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 31,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 31
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.8549035641736399
+                        }
+                      ]
+                    },
+                    {
+                      "name": "f2prateek@gmail.com",
+                      "size": 8,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 8
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.8037935947708728
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "main.m",
+                  "heat": 1.7072949356232974,
+                  "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                  "info": [
+                    {
+                      "name": "Path",
+                      "value": "Examples/ManualExample/ManualExample/main.m"
+                    },
+                    {
+                      "name": "Freshness",
+                      "value": 1.7072949356232974
+                    },
+                    {
+                      "name": "Line Count",
+                      "value": 18
+                    },
+                    {
+                      "name": "Contributors",
+                      "value": 2
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "tonyx.ca@gmail.com",
+                      "size": 14,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 14
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.8365185412881848
+                        }
+                      ]
+                    },
+                    {
+                      "name": "f2prateek@gmail.com",
+                      "size": 4,
+                      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+                      "info": [
+                        {
+                          "name": "Lines Contributed",
+                          "value": 4
+                        },
+                        {
+                          "name": "Ownership",
+                          "value": 0.8707763943351122
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LICENSE",
+      "heat": 0.21691823756070827,
+      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+      "info": [
+        {
+          "name": "Path",
+          "value": "LICENSE"
+        },
+        {
+          "name": "Freshness",
+          "value": 0.21691823756070827
+        },
+        {
+          "name": "Line Count",
+          "value": 21
+        },
+        {
+          "name": "Contributors",
+          "value": 1
+        }
+      ],
+      "children": [
+        {
+          "name": "f2prateek@gmail.com",
+          "size": 21,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 21
+            },
+            {
+              "name": "Ownership",
+              "value": 0.2169182375607083
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Makefile",
+      "heat": 3.8187587087054338,
+      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+      "info": [
+        {
+          "name": "Path",
+          "value": "Makefile"
+        },
+        {
+          "name": "Freshness",
+          "value": 3.8187587087054338
+        },
+        {
+          "name": "Line Count",
+          "value": 44
+        },
+        {
+          "name": "Contributors",
+          "value": 3
+        }
+      ],
+      "children": [
+        {
+          "name": "f2prateek@gmail.com",
+          "size": 34,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 34
+            },
+            {
+              "name": "Ownership",
+              "value": 1.4401596338355944
+            }
+          ]
+        },
+        {
+          "name": "tonyx.ca@gmail.com",
+          "size": 5,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 5
+            },
+            {
+              "name": "Ownership",
+              "value": 0.5605190508614734
+            }
+          ]
+        },
+        {
+          "name": "fathy.boundjadj@gmail.com",
+          "size": 5,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 5
+            },
+            {
+              "name": "Ownership",
+              "value": 1.8180800240083679
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Podfile",
+      "heat": 9.096377950898093,
+      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+      "info": [
+        {
+          "name": "Path",
+          "value": "Podfile"
+        },
+        {
+          "name": "Freshness",
+          "value": 9.096377950898093
+        },
+        {
+          "name": "Line Count",
+          "value": 13
+        },
+        {
+          "name": "Contributors",
+          "value": 3
+        }
+      ],
+      "children": [
+        {
+          "name": "tonyx.ca@gmail.com",
+          "size": 6,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 6
+            },
+            {
+              "name": "Ownership",
+              "value": 0.9420346618359251
+            }
+          ]
+        },
+        {
+          "name": "f2prateek@gmail.com",
+          "size": 6,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 6
+            },
+            {
+              "name": "Ownership",
+              "value": 3.051019459740314
+            }
+          ]
+        },
+        {
+          "name": "danieljackins@gmail.com",
+          "size": 1,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 1
+            },
+            {
+              "name": "Ownership",
+              "value": 5.103323829321853
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Podfile.lock",
+      "heat": 12.588762111364705,
+      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+      "info": [
+        {
+          "name": "Path",
+          "value": "Podfile.lock"
+        },
+        {
+          "name": "Freshness",
+          "value": 12.588762111364705
+        },
+        {
+          "name": "Line Count",
+          "value": 45
+        },
+        {
+          "name": "Contributors",
+          "value": 4
+        }
+      ],
+      "children": [
+        {
+          "name": "tonyx.ca@gmail.com",
+          "size": 21,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 21
+            },
+            {
+              "name": "Ownership",
+              "value": 0.8227344237136425
+            }
+          ]
+        },
+        {
+          "name": "f2prateek@gmail.com",
+          "size": 11,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 11
+            },
+            {
+              "name": "Ownership",
+              "value": 1.4435913086757772
+            }
+          ]
+        },
+        {
+          "name": "danieljackins@gmail.com",
+          "size": 5,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 5
+            },
+            {
+              "name": "Ownership",
+              "value": 7.3714677534648985
+            }
+          ]
+        },
+        {
+          "name": "fathy.boundjadj@gmail.com",
+          "size": 8,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 8
+            },
+            {
+              "name": "Ownership",
+              "value": 2.9509686255103924
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "README.md",
+      "heat": 21.806927469202854,
+      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+      "info": [
+        {
+          "name": "Path",
+          "value": "README.md"
+        },
+        {
+          "name": "Freshness",
+          "value": 21.806927469202854
+        },
+        {
+          "name": "Line Count",
+          "value": 75
+        },
+        {
+          "name": "Contributors",
+          "value": 5
+        }
+      ],
+      "children": [
+        {
+          "name": "f2prateek@gmail.com",
+          "size": 27,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 27
+            },
+            {
+              "name": "Ownership",
+              "value": 0.12135235769789211
+            }
+          ]
+        },
+        {
+          "name": "tonyx.ca@gmail.com",
+          "size": 4,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 4
+            },
+            {
+              "name": "Ownership",
+              "value": 0.05467792184499416
+            }
+          ]
+        },
+        {
+          "name": "frankensteinbot@gmail.com",
+          "size": 1,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 1
+            },
+            {
+              "name": "Ownership",
+              "value": 0.0027835367230428848
+            }
+          ]
+        },
+        {
+          "name": "william.grosset@segment.com",
+          "size": 42,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 42
+            },
+            {
+              "name": "Ownership",
+              "value": 20.717738838184673
+            }
+          ]
+        },
+        {
+          "name": "brandon@redf.net",
+          "size": 1,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 1
+            },
+            {
+              "name": "Ownership",
+              "value": 0.9103748147522585
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RELEASING.md",
+      "heat": 6.136097672237373,
+      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+      "info": [
+        {
+          "name": "Path",
+          "value": "RELEASING.md"
+        },
+        {
+          "name": "Freshness",
+          "value": 6.136097672237373
+        },
+        {
+          "name": "Line Count",
+          "value": 19
+        },
+        {
+          "name": "Contributors",
+          "value": 2
+        }
+      ],
+      "children": [
+        {
+          "name": "f2prateek@gmail.com",
+          "size": 17,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 17
+            },
+            {
+              "name": "Ownership",
+              "value": 5.791596264473589
+            }
+          ]
+        },
+        {
+          "name": "tonyx.ca@gmail.com",
+          "size": 2,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 2
+            },
+            {
+              "name": "Ownership",
+              "value": 0.34450140776378296
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "codecov.yml",
+      "heat": 1.2339583808244148,
+      "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+      "info": [
+        {
+          "name": "Path",
+          "value": "codecov.yml"
+        },
+        {
+          "name": "Freshness",
+          "value": 1.2339583808244148
+        },
+        {
+          "name": "Line Count",
+          "value": 28
+        },
+        {
+          "name": "Contributors",
+          "value": 2
+        }
+      ],
+      "children": [
+        {
+          "name": "tonyx.ca@gmail.com",
+          "size": 27,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 27
+            },
+            {
+              "name": "Ownership",
+              "value": 1.1837028250448711
+            }
+          ]
+        },
+        {
+          "name": "f2prateek@gmail.com",
+          "size": 1,
+          "image": "https://image.flaticon.com/icons/png/512/55/55025.png",
+          "info": [
+            {
+              "name": "Lines Contributed",
+              "value": 1
+            },
+            {
+              "name": "Ownership",
+              "value": 0.050255555779543055
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

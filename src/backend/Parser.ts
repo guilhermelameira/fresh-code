@@ -47,7 +47,7 @@ export function parseFile(filePath: string): FileBlame {
         console.error(`Failed to open file ${filePath}`, err);
         return {
             filePath,
-            lineCount: 0,
+            lineCount: -1,
             blameData: [] as BlameData[]
         } as FileBlame
     }
@@ -81,7 +81,7 @@ export function parseFile(filePath: string): FileBlame {
         console.error(`Failed to parse file ${filePath}`, err);
         return {
             filePath,
-            lineCount: 0,
+            lineCount: -1,
             blameData: [] as BlameData[]
         } as FileBlame
     }
