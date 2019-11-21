@@ -161,6 +161,7 @@ function calculateFreshnessForFiles(root, refTime) {
         // LEAF so calculate freshness
         var x = Parser_1.parseFile(root.path);
         root.freshnessScore = Parser_1.getFreshness(x, refTime);
+        root.ownership = Parser_1.getOwnership(x, refTime);
         root.lineCount = x.lineCount;
     }
     else {
@@ -172,11 +173,32 @@ function calculateFreshnessForFiles(root, refTime) {
     }
 }
 exports.calculateFreshnessForFiles = calculateFreshnessForFiles;
+function generateOwnershipData(ownership) {
+    var ret = [];
+    ownership.forEach(function (val, key) {
+        ret.push({
+            name: key,
+            heat: val[0],
+            size: val[1],
+            image: SampleChartInput_1.FILE_ICON,
+            info: [
+                {
+                    name: "Lines Contributed",
+                    value: val[1]
+                },
+                {
+                    name: "Ownership",
+                    value: val[0]
+                }
+            ]
+        });
+    });
+    return ret;
+}
 function generateGraphData(root) {
     if (root.children.length === 0) {
         return {
             name: root.name,
-            size: root.lineCount,
             heat: root.freshnessScore,
             image: SampleChartInput_1.FILE_ICON,
             info: [
@@ -192,7 +214,8 @@ function generateGraphData(root) {
                     name: "Line Count",
                     value: root.lineCount
                 }
-            ]
+            ],
+            children: generateOwnershipData(root.ownership)
         };
     }
     else {

@@ -20,16 +20,16 @@ class Main {
         //repoName = cloneRepo('https://github.com/guilhermelameira/fresh-code.git');
         let files = getRepoFiles(REPO_DIR);
         let root = buildDirectoryTree(files, "");
-        // calculateFreshnessForFiles(root, 1571768680);
-        // let graph = generateGraphData(root);
-        // console.log(graph);
-        // this.writeToFile(graph);
-        //removeClone();
+        calculateFreshnessForFiles(root, 1571768680);
+        let graph = generateGraphData(root);
+        console.log(graph);
+        this.writeToFile(graph);
+        // removeClone();
 
-        let ownership = getOwnership(parseFile("package.json"), 1571768680);
-        console.log(ownership)
-        ownership = getOwnership(parseFile("src/parser/RichTextParser.ts"), 1571768680);
-        console.log(ownership)
+        // let ownership = getOwnership(parseFile("package.json"), 1571768680);
+        // console.log(ownership)
+        // ownership = getOwnership(parseFile("src/parser/RichTextParser.ts"), 1571768680);
+        // console.log(ownership)
 
     }
 
