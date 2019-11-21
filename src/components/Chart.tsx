@@ -177,7 +177,7 @@ class Chart extends Component<ChartProps> {
     }
     private getColor(ratio: number): string {
         // Brown to green
-        return `rgb(100,${Math.floor((1 - ratio) * 200) + 55},0)`;
+        return `rgb(100,${Math.floor(ratio * 200) + 55},0)`;
         // Red to green
         // if (percentage > .5) {
         //     let g = Math.floor((percentage - .5) * 2 * 255);
