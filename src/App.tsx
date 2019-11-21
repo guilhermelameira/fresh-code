@@ -15,10 +15,10 @@ class App extends React.Component {
   }
 
   private zoomIn() {
-    this.setState({zoom: Math.max((this.state as any).zoom + 25, MIN_ZOOM)}); 
+    this.setState({zoom: Math.max((this.state as any).zoom + 20, MIN_ZOOM)}); 
   }
   private zoomOut() {
-    this.setState({zoom: Math.max((this.state as any).zoom - 25, MIN_ZOOM)}); 
+    this.setState({zoom: Math.max((this.state as any).zoom - 20, MIN_ZOOM)}); 
   }
 
   render() {

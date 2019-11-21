@@ -92,9 +92,8 @@ class Chart extends Component<ChartProps> {
     }
     private configChartStyling(chart: am4charts.TreeMap, levelSeriesTemplates: am4charts.TreeMapSeries[]): void {
         levelSeriesTemplates.forEach((levelSeriesTemplate: am4charts.TreeMapSeries) => {
-            levelSeriesTemplate.columns.template.strokeWidth = 10;
+            levelSeriesTemplate.columns.template.strokeWidth = 3;
             levelSeriesTemplate.columns.template.stroke = am4core.color("white");
-            levelSeriesTemplate.columns.template.column.cornerRadius(10, 10, 10, 10);
             levelSeriesTemplate.columns.template.strokeOpacity = 1;
             levelSeriesTemplate.columns.template.margin(100, 100, 10, 10);
         });
@@ -176,8 +175,34 @@ class Chart extends Component<ChartProps> {
         }
     }
     private getColor(ratio: number): string {
+        // Using bins
+        // https://www.colorhexa.com/ff4757-to-6ab04c
+        const percentage = 1 - ratio;
+        if (percentage < 0.1) {
+            return '#90bd4d';
+        } else if (percentage < 0.2) {
+          return '#a6c44d';
+        } else if (percentage < 0.3) {
+          return '#bdca4d';
+        } else if (percentage < 0.4) {
+          return '#d1cb4d';
+        } else if (percentage < 0.5) {
+          return '#d7bd4d';
+        } else if (percentage < 0.6) {
+          return '#deac4c';
+        } else if (percentage < 0.7) {
+          return '#e5994b';
+        } else if (percentage < 0.8) {
+          return '#eb844b';
+        } else if (percentage < 0.9) {
+          return '#f26d4a'
+        } else {
+          return '#f85348';
+        }
+
         // Brown to green
-        return `rgb(100,${Math.floor(ratio * 200) + 55},0)`;
+        // return `rgb(100,${Math.floor(ratio * 200) + 55},0)`;
+
         // Red to green
         // if (percentage > .5) {
         //     let g = Math.floor((percentage - .5) * 2 * 255);
