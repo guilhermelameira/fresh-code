@@ -178,26 +178,26 @@ export function calculateFreshnessForFiles(root: DirectoryNode, refTime: number)
 }
 
 function generateOwnershipData(ownership: Map<string, [number, number]>): ChartDataLeaf[] {
-     {
-        name: root.name,
-        heat: root.freshnessScore,
-        image: FILE_ICON,
-        info: [
-            {
-                name: "Path",
-                value: root.path
-            },
-            {
-                name: "Freshness",
-                value: root.freshnessScore
-            },
-            {
-                name: "Line Count",
-                value: root.lineCount
-            }
-        ],
-        children: generateOwnershipData(root.ownership!)
-    } as ChartDataBranch
+    const ret = [] as ChartDataLeaf[];
+    ownership.forEach((val, key) => {
+        ret.push({
+            name: key,
+            heat: val[0],
+            size: val[1],
+            image: FILE_ICON,
+            info: [
+                {
+                    name: "Lines Contributed",
+                    value: val[1]
+                },
+                {
+                    name: "Ownership",
+                    value: val[0]
+                }
+            ]
+        } as ChartDataLeaf)
+    });
+    return ret
 }
 
 export function generateGraphData(root: DirectoryNode): ChartDataNode {
