@@ -8,7 +8,7 @@ export type ChartDataNode = (ChartDataBranch | ChartDataLeaf);
 
 export interface ChartDataLeaf {
     name: string;
-    size: number;
+    size?: number;
     heat?: number;
     info: InfoElement[];
     image?: string;
