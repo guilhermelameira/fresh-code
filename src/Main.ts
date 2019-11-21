@@ -20,7 +20,7 @@ class Main {
         //repoName = cloneRepo('https://github.com/guilhermelameira/fresh-code.git');
         let files = getRepoFiles(REPO_DIR);
         let root = buildDirectoryTree(files, "repo");
-        calculateFreshnessForFiles(root, 1571768680);
+        calculateFreshnessForFiles(root, 1574280919);
         let graph = generateGraphData(root);
         // console.log(graph);
         this.writeToFile(graph);

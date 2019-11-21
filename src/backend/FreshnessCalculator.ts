@@ -8,7 +8,7 @@
 import {formatOutputNewLine, runShellCommand} from './ShellCommander';
 import {DirectoryNode, FileBlame} from '../types/BackendTypes';
 import {ChartDataBranch, ChartDataLeaf, ChartDataNode} from "../types/ChartTypes";
-import {FILE_ICON, FOLDER_ICON} from "../resources/SampleChartInput";
+import {FILE_ICON, FOLDER_ICON, USER_ICON} from "../resources/SampleChartInput";
 import {getFreshness, getOwnership, parseFile} from "./Parser";
 
 const CLONE_DIR = '../resources/clone';
@@ -187,7 +187,7 @@ function generateOwnershipData(ownership: Map<string, [number, number]>): ChartD
         ret.push({
             name: key,
             size: val[1],
-            image: FILE_ICON,
+            image: USER_ICON,
             info: [
                 {
                     name: "Lines Contributed",
@@ -206,6 +206,22 @@ function generateOwnershipData(ownership: Map<string, [number, number]>): ChartD
 export function generateGraphData(root: DirectoryNode): ChartDataNode {
     if (root.children.length === 0) {
         let ownershipData = generateOwnershipData(root.ownership!);
+        if (ownershipData.length === 0){
+            return {
+                name: root.name,
+                image: FILE_ICON,
+                info: [
+                    {
+                        name: "Path",
+                        value: root.path
+                    },
+                    {
+                        name: "Freshness",
+                        value: root.freshnessScore
+                    }
+                ]
+            } as ChartDataLeaf
+        }
         return {
             name: root.name,
             heat: root.freshnessScore,

@@ -56,10 +56,6 @@ export function parseFile(filePath: string): FileBlame {
         const blameData: BlameData[] = lines.filter(Boolean).map((l: string) => {
             let tokens = l.match(/\S+/g) as string[];
             // console.log("TOKENS", tokens[0], tokens[1], tokens[2]);
-            if (tokens.length === 0) {
-                console.error("No tokens to parse");
-                return {} as BlameData
-            }
             const commitHash = tokens[0];
             const author = tokens[2].substring(
                 tokens[2].lastIndexOf("<") + 1,

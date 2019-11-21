@@ -1,8 +1,9 @@
 import {Repo} from '../types/ChartTypes'; 
 
 // TODO: this are just quick examples, find nicer pictures.
-export const FOLDER_ICON = "https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-32-512.png";
-export const FILE_ICON = "https://image.flaticon.com/icons/png/512/55/55025.png";
+export const FOLDER_ICON = "https://img.icons8.com/metro/256/000000/folder-invoices.png";
+export const FILE_ICON = "https://img.icons8.com/metro/256/000000/file.png";
+export const USER_ICON = "https://img.icons8.com/metro/256/000000/user-male.png";
 
 
 export const repo: Repo = {

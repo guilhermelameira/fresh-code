@@ -183,7 +183,7 @@ function generateOwnershipData(ownership) {
         ret.push({
             name: key,
             size: val[1],
-            image: SampleChartInput_1.FILE_ICON,
+            image: SampleChartInput_1.USER_ICON,
             info: [
                 {
                     name: "Lines Contributed",
@@ -201,6 +201,22 @@ function generateOwnershipData(ownership) {
 function generateGraphData(root) {
     if (root.children.length === 0) {
         var ownershipData = generateOwnershipData(root.ownership);
+        if (ownershipData.length === 0) {
+            return {
+                name: root.name,
+                image: SampleChartInput_1.FILE_ICON,
+                info: [
+                    {
+                        name: "Path",
+                        value: root.path
+                    },
+                    {
+                        name: "Freshness",
+                        value: root.freshnessScore
+                    }
+                ]
+            };
+        }
         return {
             name: root.name,
             heat: root.freshnessScore,
