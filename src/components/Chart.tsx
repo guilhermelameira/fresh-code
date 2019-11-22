@@ -134,7 +134,7 @@ class Chart extends Component<ChartProps> {
             if (node.heat) {
                 node.color = this.getColor((node.heat - min) / (max - min));
             } else {
-                node.color = NO_HEAT_COLOR;
+                node.color = !node.name ? NO_HEAT_COLOR : intToRGB(hashCode(node.name));
             }
             if (isExtendedBranch(node)) {
                 node.children.forEach(setColor);
@@ -223,4 +223,21 @@ class Chart extends Component<ChartProps> {
         );
     }
 }
+
+function hashCode(str: string): number { // java String#hashCode
+    var hash = 0;
+    for (var i = 0; i < str.length; i++) {
+        hash = str.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    return hash;
+}
+
+function intToRGB(i: number): string {
+    var c = (i & 0x00FFFFFF)
+        .toString(16)
+        .toUpperCase();
+
+    return "#" + "00000".substring(0, 6 - c.length) + c;
+}
+
 export default Chart;
