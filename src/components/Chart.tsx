@@ -133,7 +133,7 @@ class Chart extends Component<ChartProps> {
             if (node.heat) {
                 node.color = this.getColor((node.heat - min) / (max - min));
             } else {
-                node.color = (!node.name || isExtendedBranch(node)) ? NO_HEAT_COLOR : intToRGB(hashCode(node.name));
+                node.color = (!node.name || isExtendedBranch(node)) ? NO_HEAT_COLOR : intToRGB();
             }
             if (isExtendedBranch(node)) {
                 node.children.forEach(setColor);
@@ -233,7 +233,28 @@ function hashCode(str: string): number { // java String#hashCode
 
 function intToRGB(i: number): string {
     const COLORS = ["rgb(45,187,213)", "rgb(37,155,209)", "rgb(27,126, 170)", "rgb(13,90,114)", "rgb(8,81,114)"];
-    return COLORS[(Math.abs(i) % COLORS.length)]
+    var option = 0;
+    if (option == 0){
+        option = 1;
+        return COLORS[0];
+    }
+    else if (option == 1){
+        option = 2;
+        return COLORS[1];
+    }
+    else if (option == 2){
+        option = 3;
+        return COLORS[2];
+    }
+    else if (option == 3){
+        option = 4;
+        return COLORS[3];
+    }
+    else {
+        option = 0;
+        return COLORS[4];
+    }
+    // return COLORS[(Math.abs(i) % COLORS.length)]
 }
 
 export default Chart;
