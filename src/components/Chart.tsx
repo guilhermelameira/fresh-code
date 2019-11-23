@@ -246,13 +246,13 @@ class Chart extends Component<ChartProps> {
     }
 }
 
-function hashCode(str: string): number { // java String#hashCode
-    var hash = 0;
-    for (var i = 0; i < str.length; i++) {
-        hash = str.charCodeAt(i) + ((hash << 5) - hash);
-    }
-    return hash;
-}
+// function hashCode(str: string): number { // java String#hashCode
+//     var hash = 0;
+//     for (var i = 0; i < str.length; i++) {
+//         hash = str.charCodeAt(i) + ((hash << 5) - hash);
+//     }
+//     return hash;
+// }
 
 function intToRGB(): string {
     const COLORS = ["rgb(45,187,213)", "rgb(37,155,209)", "rgb(27,126, 170)", "rgb(13,90,114)", "rgb(8,81,114)"];
