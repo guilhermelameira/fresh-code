@@ -27,7 +27,6 @@ class Chart extends Component<ChartProps> {
         let { repo } = this.props;
         this.configDataFields(chart);
         let levelSeriesTemplates = this.generateLevelSeriesTemplates(chart);
-        this.configHeatLegend(chart, repo);
         this.configChartStyling(chart, levelSeriesTemplates);
         this.configElementText(levelSeriesTemplates);
         this.configElementTooltip(levelSeriesTemplates);
