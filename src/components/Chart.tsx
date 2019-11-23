@@ -232,11 +232,8 @@ function hashCode(str: string): number { // java String#hashCode
 }
 
 function intToRGB(i: number): string {
-    var c = (i & 0x00FFFFFF)
-        .toString(16)
-        .toUpperCase();
-
-    return "#" + "00000".substring(0, 6 - c.length) + c;
+    const COLORS = ["rgb(45,187,213)", "rgb(37,155,209)", "rgb(27,126, 170)", "rgb(13,90,114)", "rgb(8,81,114)"];
+    return COLORS[(Math.abs(i) % COLORS.length)]
 }
 
 export default Chart;
