@@ -3,6 +3,17 @@ import * as fs from "fs";
 import * as path from "path";
 import {REPO_DIR} from "../Main";
 
+const WHITELIST_FILE_TYPES = [
+    RegExp("\\.ts$"),
+    RegExp("\\.tsx$"),
+    RegExp("\\.js$"),
+    RegExp("\\.hs$"),
+    RegExp("\\.c$"),
+    RegExp("\\.cpp$"),
+    RegExp("\\.java$"),
+    RegExp("\\.go$"),
+]
+
 export function printFreshnessRecursively(root: DirectoryNode, tabs: number, refTime: number) {
     if (root.children.length === 0) {
         let freshness = getFreshness(parseFile(root.path), refTime);
@@ -48,11 +59,13 @@ export function parseFile(filePath: string): FileBlame {
         return {
             filePath,
             lineCount: -1,
-            blameData: [] as BlameData[]
+            blameData: [] as BlameData[],
+            isWhiteListed: false
         } as FileBlame
     }
     let lines: string[] = file.trim().split('\n');
     try {
+        const isWhiteListed = WHITELIST_FILE_TYPES.map((r) => r.test(filePath)).reduce((prev, cur) => prev || cur, false);
         const blameData: BlameData[] = lines.filter(Boolean).map((l: string) => {
             let tokens = l.match(/\S+/g) as string[];
             // console.log("TOKENS", tokens[0], tokens[1], tokens[2]);
@@ -71,14 +84,16 @@ export function parseFile(filePath: string): FileBlame {
         return {
             filePath,
             lineCount: lines.length,
-            blameData
+            blameData,
+            isWhiteListed
         } as FileBlame
     } catch (err) {
         console.error(`Failed to parse file ${filePath}`, err);
         return {
             filePath,
             lineCount: -1,
-            blameData: [] as BlameData[]
+            blameData: [] as BlameData[],
+            isWhiteListed: false
         } as FileBlame
     }
 }

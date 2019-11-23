@@ -169,15 +169,18 @@ export function calculateFreshnessForFiles(root: DirectoryNode, refTime: number)
         if (x.lineCount === -1) {
             return
         }
-        root.freshnessScore = getFreshness(x, refTime);
+        root.isWhiteListed = x.isWhiteListed;
         root.ownership = getOwnership(x, refTime);
+        root.freshnessScore = (root.isWhiteListed) ? getFreshness(x, refTime) : 0;
     } else {
         root.children.forEach((child) => {
             calculateFreshnessForFiles(child, refTime);
         });
         root.children = root.children.filter((e) => e.lineCount !== -1);
-        root.lineCount = root.children.map((e) => e.lineCount).reduce((a, b) => a + b, 0);
-        root.freshnessScore = root.children.map((e) => e.freshnessScore).reduce((a, b) => a + b, 0) / root.children.length
+        const valuableChildren = root.children.filter((e) => e.isWhiteListed);
+        root.lineCount = valuableChildren.map((e) => e.lineCount).reduce((a, b) => a + b, 0);
+        root.freshnessScore = valuableChildren.map((e) => e.freshnessScore).reduce((a, b) => a + b, 0) / valuableChildren.length;
+        root.isWhiteListed = root.children.map((e) => e.isWhiteListed).reduce((prev, cur) => prev || cur, false);
     }
 }
 
@@ -206,7 +209,7 @@ function generateOwnershipData(ownership: Map<string, [number, number]>): ChartD
 export function generateGraphData(root: DirectoryNode): ChartDataNode {
     if (root.children.length === 0) {
         let ownershipData = generateOwnershipData(root.ownership!);
-        if (ownershipData.length === 0){
+        if (ownershipData.length === 0) {
             return {
                 name: root.name,
                 image: FILE_ICON,
@@ -222,9 +225,10 @@ export function generateGraphData(root: DirectoryNode): ChartDataNode {
                 ]
             } as ChartDataLeaf
         }
+        const heat = (!root.isWhiteListed) ? undefined : root.freshnessScore;
         return {
             name: root.name,
-            heat: root.freshnessScore,
+            heat,
             image: FILE_ICON,
             info: [
                 {
@@ -247,9 +251,10 @@ export function generateGraphData(root: DirectoryNode): ChartDataNode {
             children: ownershipData
         } as ChartDataBranch
     } else {
+        const heat = (!root.isWhiteListed) ? undefined : root.freshnessScore;
         return {
             name: root.name,
-            heat: root.freshnessScore,
+            heat,
             info: [
                 {
                     name: "File Count",

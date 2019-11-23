@@ -19,7 +19,7 @@ function isExtendedBranch(node: ExtendedChartDataNode): node is ExtendedChartDat
     return isBranch(node as ChartDataNode);
 }
 const MIN_SIZE = 10; 
-const NO_HEAT_COLOR = "lightgrey";
+const NO_HEAT_COLOR = "darkgrey";
 class Chart extends Component<ChartProps> {
     chart?: am4charts.TreeMap;
     componentDidMount() {
@@ -133,7 +133,7 @@ class Chart extends Component<ChartProps> {
             if (node.heat) {
                 node.color = this.getColor((node.heat - min) / (max - min));
             } else {
-                node.color = !node.name ? NO_HEAT_COLOR : intToRGB(hashCode(node.name));
+                node.color = (!node.name || isExtendedBranch(node)) ? NO_HEAT_COLOR : intToRGB(hashCode(node.name));
             }
             if (isExtendedBranch(node)) {
                 node.children.forEach(setColor);

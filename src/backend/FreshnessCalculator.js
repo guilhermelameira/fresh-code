@@ -164,16 +164,19 @@ function calculateFreshnessForFiles(root, refTime) {
         if (x.lineCount === -1) {
             return;
         }
-        root.freshnessScore = Parser_1.getFreshness(x, refTime);
+        root.isWhiteListed = x.isWhiteListed;
         root.ownership = Parser_1.getOwnership(x, refTime);
+        root.freshnessScore = (root.isWhiteListed) ? Parser_1.getFreshness(x, refTime) : 0;
     }
     else {
         root.children.forEach(function (child) {
             calculateFreshnessForFiles(child, refTime);
         });
         root.children = root.children.filter(function (e) { return e.lineCount !== -1; });
-        root.lineCount = root.children.map(function (e) { return e.lineCount; }).reduce(function (a, b) { return a + b; }, 0);
-        root.freshnessScore = root.children.map(function (e) { return e.freshnessScore; }).reduce(function (a, b) { return a + b; }, 0) / root.children.length;
+        var valuableChildren = root.children.filter(function (e) { return e.isWhiteListed; });
+        root.lineCount = valuableChildren.map(function (e) { return e.lineCount; }).reduce(function (a, b) { return a + b; }, 0);
+        root.freshnessScore = valuableChildren.map(function (e) { return e.freshnessScore; }).reduce(function (a, b) { return a + b; }, 0) / valuableChildren.length;
+        root.isWhiteListed = root.children.map(function (e) { return e.isWhiteListed; }).reduce(function (prev, cur) { return prev || cur; }, false);
     }
 }
 exports.calculateFreshnessForFiles = calculateFreshnessForFiles;
@@ -217,9 +220,10 @@ function generateGraphData(root) {
                 ]
             };
         }
+        var heat = (!root.isWhiteListed) ? undefined : root.freshnessScore;
         return {
             name: root.name,
-            heat: root.freshnessScore,
+            heat: heat,
             image: SampleChartInput_1.FILE_ICON,
             info: [
                 {
@@ -243,9 +247,10 @@ function generateGraphData(root) {
         };
     }
     else {
+        var heat = (!root.isWhiteListed) ? undefined : root.freshnessScore;
         return {
             name: root.name,
-            heat: root.freshnessScore,
+            heat: heat,
             info: [
                 {
                     name: "File Count",

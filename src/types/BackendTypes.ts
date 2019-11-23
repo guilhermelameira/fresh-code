@@ -6,6 +6,7 @@ export interface DirectoryNode {
     lineCount: number
     freshnessScore: number;
     ownership?: Map<string, [number, number]> // map of contributor name to [ownership, line_count]
+    isWhiteListed: boolean
 }
 
 export interface BlameData {
@@ -17,5 +18,6 @@ export interface BlameData {
 export interface FileBlame {
     filePath: string
     lineCount: number
-    blameData: BlameData[]
+    blameData: BlameData[],
+    isWhiteListed: boolean
 }
