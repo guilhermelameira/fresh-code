@@ -12,6 +12,7 @@ const WHITELIST_FILE_TYPES = [
     RegExp("\\.cpp$"),
     RegExp("\\.java$"),
     RegExp("\\.go$"),
+    RegExp("\\.cs$"),
 ]
 
 export function printFreshnessRecursively(root: DirectoryNode, tabs: number, refTime: number) {
