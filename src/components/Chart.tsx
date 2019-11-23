@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import '../App.css';
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
-import { ChartProps, ChartDataNode, ChartDataBranch, ChartDataLeaf, isBranch, isLeaf } from '../types/ChartTypes';
+import {ChartDataBranch, ChartDataLeaf, ChartDataNode, ChartProps, isBranch} from '../types/ChartTypes';
+
 am4core.useTheme(am4themes_animated);
 // Internal Types
 type ExtendedChartDataNode = (ExtendedChartDataBranch | ExtendedChartDataLeaf);
@@ -181,27 +182,30 @@ class Chart extends Component<ChartProps> {
         // Using bins
         // https://www.colorhexa.com/ff4757-to-6ab04c
         const percentage = 1 - ratio;
-        if (percentage < 0.1) {
-            return '#90bd4d';
-        } else if (percentage < 0.2) {
-          return '#a6c44d';
-        } else if (percentage < 0.3) {
-          return '#bdca4d';
-        } else if (percentage < 0.4) {
-          return '#d1cb4d';
-        } else if (percentage < 0.5) {
-          return '#d7bd4d';
-        } else if (percentage < 0.6) {
-          return '#deac4c';
-        } else if (percentage < 0.7) {
-          return '#e5994b';
-        } else if (percentage < 0.8) {
-          return '#eb844b';
-        } else if (percentage < 0.9) {
-          return '#f26d4a'
-        } else {
-          return '#f85348';
-        }
+        // if (percentage < 0.1) {
+        //     return '#90bd4d';
+        // } else if (percentage < 0.2) {
+        //   return '#a6c44d';
+        // } else if (percentage < 0.3) {
+        //   return '#bdca4d';
+        // } else if (percentage < 0.4) {
+        //   return '#d1cb4d';
+        // } else if (percentage < 0.5) {
+        //   return '#d7bd4d';
+        // } else if (percentage < 0.6) {
+        //   return '#deac4c';
+        // } else if (percentage < 0.7) {
+        //   return '#e5994b';
+        // } else if (percentage < 0.8) {
+        //   return '#eb844b';
+        // } else if (percentage < 0.9) {
+        //   return '#f26d4a'
+        // } else {
+        //   return '#f85348';
+        // }
+
+        const color = pickHex([235, 77, 75], [106, 176, 76], percentage)
+        return `rgb(${color[0]}, ${color[1]}, ${color[2]})`
 
         // Brown to green
         // return `rgb(100,${Math.floor(ratio * 200) + 55},0)`;
@@ -222,6 +226,16 @@ class Chart extends Component<ChartProps> {
             <div id="chartdiv" style={{ width: "100%", height: "100%" }}></div>
         );
     }
+}
+
+function pickHex(color1: number[], color2: number[], weight: number) {
+    const w1 = weight;
+    const w2 = 1 - w1;
+    return [
+        Math.round(color1[0] * w1 + color2[0] * w2),
+        Math.round(color1[1] * w1 + color2[1] * w2),
+        Math.round(color1[2] * w1 + color2[2] * w2)
+    ];
 }
 
 function hashCode(str: string): number { // java String#hashCode

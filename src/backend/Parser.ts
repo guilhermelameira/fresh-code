@@ -19,11 +19,15 @@ export function getFreshness(file: FileBlame, refTime: number): number {
     if (file.blameData.length === 0) {
         return val
     }
+    let countVal = 0;
     file.blameData.forEach((b: BlameData) => {
+        if (refTime - b.timestamp) {
+            countVal++
+        }
         const timeVal = (refTime - b.timestamp) / 604800;
         val += Math.exp(-0.03 * timeVal);
     });
-    return 100 * val / file.blameData.length
+    return 50 * val / file.blameData.length * (1 + (countVal / file.blameData.length))
 }
 
 export function getOwnership(file: FileBlame, refTime: number): Map<string, [number, number]> {

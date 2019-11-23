@@ -11,7 +11,7 @@ import {runShellCommand} from "./backend/ShellCommander";
 
 export const PROJECT_ROOT_PATH = path.join(__dirname, "..");
 export const REPO_DIR = path.join(PROJECT_ROOT_PATH, "repo");
-const REPO_LINK = "https://github.com/jquery/jquery";
+const REPO_LINK = "https://github.com/ubc/compair";
 
 class Main {
     public main() {
