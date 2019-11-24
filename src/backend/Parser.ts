@@ -13,6 +13,7 @@ const WHITELIST_FILE_TYPES = [
     RegExp("\\.java$"),
     RegExp("\\.go$"),
     RegExp("\\.cs$"),
+    RegExp("\\.py$"),
 ]
 
 export function printFreshnessRecursively(root: DirectoryNode, tabs: number, refTime: number) {
@@ -32,7 +33,7 @@ export function getFreshness(file: FileBlame, refTime: number): number {
         return val
     }
     file.blameData.forEach((b: BlameData) => {
-        const timeVal = (refTime - b.timestamp) / 604800;
+        const timeVal = (refTime - b.timestamp) / (24 * 60 * 60 * 7);
         val += Math.exp(-0.03 * timeVal);
     });
     return 100 * val / file.blameData.length
