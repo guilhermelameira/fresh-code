@@ -11,7 +11,14 @@ import {runShellCommand} from "./backend/ShellCommander";
 
 export const PROJECT_ROOT_PATH = path.join(__dirname, "..");
 export const REPO_DIR = path.join(PROJECT_ROOT_PATH, "repo");
-const REPO_LINK = "git@github.com:prayansh/CPSC312-Project-Haskell.git";
+
+if (!process.argv[2]) {
+  console.log('No repository link given');
+  console.log('Usage: npm run analyze <REPO_CLONE_LINK>');
+  process.exit();
+}
+
+const REPO_LINK = process.argv[2].toString();
 
 class Main {
     public main() {
